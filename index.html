@@ -12,7 +12,9 @@
 <meta property="og:title" content="Ícaro Galvão · Senior QA Engineer — devin-* ecosystem"/>
 <meta property="og:description" content="Local-first open-source tooling for Devin and AI coding agents: backup, search, metrics, memory, QA. Zero telemetry."/>
 <meta property="og:url" content="https://icaro0310.github.io/"/>
-<meta name="twitter:card" content="summary"/>
+<meta property="og:image" content="https://icaro0310.github.io/assets/banner.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://icaro0310.github.io/assets/banner.png"/>
 <script type="application/ld+json">
 {
  "@context":"https://schema.org",
@@ -72,6 +74,8 @@ a.card:hover{transform:translateY(-3px);border-color:var(--acc);box-shadow:0 12p
 .card h3 .mono{font-family:ui-monospace,'SF Mono',SFMono-Regular,Menlo,monospace;font-size:15px}
 .card p{font-size:14px;line-height:1.5;color:var(--sub)}
 a.card.featured{border-color:var(--acc);grid-column:1/-1;text-align:center;padding:30px 24px}
+a.card.featured img{display:block;width:100%;max-width:880px;margin:0 auto 20px;border-radius:14px;border:1px solid var(--line)}
+.step{display:inline-block;margin-top:12px;font-size:11.5px;font-weight:600;color:var(--sub);letter-spacing:.14em;text-transform:uppercase}
 .tag{display:inline-block;margin-top:12px;font-size:11.5px;font-weight:600;color:var(--acc);letter-spacing:.02em}
 .about{max-width:640px;margin:0 auto}
 .about p{font-size:16px;line-height:1.65;color:var(--sub);margin-bottom:16px}
@@ -147,13 +151,16 @@ footer .cta:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,113,2
 
 <h2>See it live</h2>
 <div class="grid">
-  <a class="card featured" href="https://icaro0310.github.io/demos/devin-office.html"><h3><span class="mono">devin-office</span> — live demo</h3><p>Active Devin sessions, subagents and tool activity rendered as an animated SVG circuit board. Open the demo to watch the pulses move.</p><span class="tag">open demo →</span></a>
+  <a class="card featured" href="https://icaro0310.github.io/demos/devin-office.html"><img src="assets/office-demo.gif" alt="devin-office — animated SVG circuit board rendering live Devin sessions" loading="lazy"/><h3><span class="mono">devin-office</span> — live demo</h3><p>Active Devin sessions, subagents and tool activity rendered as an animated SVG circuit board. Open the demo to watch the pulses move.</p><span class="tag">open demo →</span></a>
 </div>
 
-<h2>Foundation</h2>
+<h2>Selected work</h2>
 <div class="grid">
-  <a class="card" href="https://github.com/Icaro0310/devin-internals-spec"><h3><span class="mono">devin-internals-spec</span></h3><p>Devin's store internals, documented — schema detection, typed parsers, fixtures.</p><span class="tag">specification</span></a>
-  <a class="card" href="https://github.com/Icaro0310/devin-redact"><h3><span class="mono">devin-redact</span></h3><p>Secret/PII redaction that understands tool-call semantics, in-place in SQLite.</p><span class="tag">security</span></a>
+  <a class="card" href="https://github.com/Icaro0310/devin-internals-spec"><h3><span class="mono">devin-internals-spec</span></h3><p>Understand the system — Devin's store internals documented: schema detection, typed parsers, fixtures.</p><span class="step">01 · understand</span></a>
+  <a class="card" href="https://github.com/Icaro0310/devin-qa-pack"><h3><span class="mono">devin-qa-pack</span></h3><p>Verify the agent — claims vs. reality, reported as PASS / PARTIAL / UNVERIFIED.</p><span class="step">02 · verify</span></a>
+  <a class="card" href="https://github.com/Icaro0310/devin-evals"><h3><span class="mono">devin-evals</span></h3><p>Measure the agent — replay recorded sessions against rubric graders, deterministically.</p><span class="step">03 · measure</span></a>
+  <a class="card" href="https://github.com/Icaro0310/devin-bridge"><h3><span class="mono">devin-bridge</span></h3><p>Control the agent — policy-gated ACP client with allow / deny / ask rules.</p><span class="step">04 · control</span></a>
+  <a class="card" href="https://github.com/Icaro0310/poordjaevin"><h3><span class="mono">poordjaevin</span></h3><p>Judge the decision — calibrated answer layer; ECE 0.170 → 0.071 through Devin's own model via ACP.</p><span class="step">05 · judge</span></a>
 </div>
 
 <h2>Insight</h2>
@@ -166,20 +173,14 @@ footer .cta:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,113,2
 <h2>Safety</h2>
 <div class="grid">
   <a class="card" href="https://github.com/Icaro0310/devin-backup"><h3><span class="mono">devin-backup</span></h3><p>Snapshot, verify, restore, rotate — with schema-version manifests.</p><span class="tag">backup</span></a>
+  <a class="card" href="https://github.com/Icaro0310/devin-redact"><h3><span class="mono">devin-redact</span></h3><p>Secret/PII redaction that understands tool-call semantics, in-place in SQLite.</p><span class="tag">security</span></a>
   <a class="card" href="https://github.com/Icaro0310/devin-metrics"><h3><span class="mono">devin-metrics</span></h3><p>Cost, tokens, sessions per project/model/day — local only.</p><span class="tag">analytics</span></a>
-  <a class="card" href="https://github.com/Icaro0310/devin-qa-pack"><h3><span class="mono">devin-qa-pack</span></h3><p>Claims vs. reality — PASS / PARTIAL / UNVERIFIED.</p><span class="tag">verification</span></a>
 </div>
 
 <h2>Memory &amp; recall</h2>
 <div class="grid">
-  <a class="card" href="https://github.com/Icaro0310/devin-evals"><h3><span class="mono">devin-evals</span></h3><p>Replay recorded sessions against rubric graders, deterministically.</p><span class="tag">evaluation</span></a>
   <a class="card" href="https://github.com/Icaro0310/devin-graph"><h3><span class="mono">devin-graph</span></h3><p>Knowledge graph — sessions ↔ projects ↔ files ↔ tools.</p><span class="tag">graph</span></a>
   <a class="card" href="https://github.com/Icaro0310/devin-search"><h3><span class="mono">devin-search</span></h3><p>FTS5 full-text search across every session.</p><span class="tag">search</span></a>
-</div>
-
-<h2>Agent plumbing</h2>
-<div class="grid">
-  <a class="card" href="https://github.com/Icaro0310/devin-bridge"><h3><span class="mono">devin-bridge</span></h3><p>Policy-gated ACP client — allow / deny / ask rules.</p><span class="tag">acp</span></a>
   <a class="card" href="https://github.com/Icaro0310/devin-memory"><h3><span class="mono">devin-memory</span></h3><p>Anti-poisoning memory — provenance, versioning, quarantine.</p><span class="tag">memory</span></a>
 </div>
 
@@ -187,12 +188,11 @@ footer .cta:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,113,2
 <div class="grid">
   <a class="card" href="https://github.com/Icaro0310/devin-janitor"><h3><span class="mono">devin-janitor</span></h3><p>Session lifecycle — export-then-delete, tiered, dry-run first.</p><span class="tag">automation</span></a>
   <a class="card" href="https://github.com/Icaro0310/devin-orchestrator"><h3><span class="mono">devin-orchestrator</span></h3><p>Background-worker fan-out — deterministic planner, caps, no nesting.</p><span class="tag">orchestration</span></a>
+  <a class="card" href="https://github.com/Icaro0310/devin-powerups"><h3><span class="mono">devin-powerups</span></h3><p>Maintainer hub — registry, scaffolder, weekly reports.</p><span class="tag">meta</span></a>
 </div>
 
 <h2>Related</h2>
 <div class="grid">
-  <a class="card" href="https://github.com/Icaro0310/poordjaevin"><h3><span class="mono">poordjaevin</span></h3><p>Djævin — calibrated decision layer; scores through Devin's own model via ACP.</p><span class="tag">decision layer</span></a>
-  <a class="card" href="https://github.com/Icaro0310/devin-powerups"><h3><span class="mono">devin-powerups</span></h3><p>Maintainer hub — registry, scaffolder, weekly reports.</p><span class="tag">meta</span></a>
   <a class="card" href="https://github.com/Icaro0310/devin-office"><h3><span class="mono">devin-office</span></h3><p>Live Devin activity as an animated SVG circuit board — sessions, subagents, tools. <a href="https://icaro0310.github.io/demos/devin-office.html" style="color:var(--acc)">Live demo</a>.</p><span class="tag">dashboard</span></a>
   <a class="card" href="https://github.com/Icaro0310/qwenpaw-suite"><h3><span class="mono">qwenpaw-suite</span></h3><p>Optional add-on — Ollama ↔ OpenAI bridge for self-hosted model operators.</p><span class="tag">optional</span></a>
 </div>
@@ -203,7 +203,7 @@ footer .cta:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,113,2
   <details class="q"><summary>How do I export Devin sessions?</summary><p><a href="https://github.com/Icaro0310/devin-history">devin-history</a> reads the sessions DB and exports Markdown, JSON or CSV — including Obsidian-ready notes.</p></details>
   <details class="q"><summary>How do I back up and restore Devin's local data?</summary><p><a href="https://github.com/Icaro0310/devin-backup">devin-backup</a> snapshots the stores with schema-version manifests, then verifies, restores and rotates them.</p></details>
   <details class="q"><summary>How do I remove secrets from exported history before sharing?</summary><p><a href="https://github.com/Icaro0310/devin-redact">devin-redact</a> understands tool-call semantics, not just plaintext patterns — redacting in place inside SQLite, with a <span class="mono">.bak</span> safety copy.</p></details>
-  <details class="q"><summary>Can I run all of this on a locked-down corporate machine?</summary><p>Yes. The tools need the Devin CLI and Python ≥ 3.10 — no VM, no tunnel, no model server, no Slack, no Obsidian. The only Node.js dependency is <a href="https://github.com/Icaro0310/devin-bridge">devin-bridge</a>, an ACP client for the Devin CLI itself.</p></details>
+  <details class="q"><summary>Can I run all of this on a locked-down corporate machine?</summary><p>Yes — the whole catalog needs only the Devin CLI and Python ≥ 3.10: no VM, no tunnel, no model server, no Slack, no Obsidian. The only Node.js dependency is <a href="https://github.com/Icaro0310/devin-bridge">devin-bridge</a>, an ACP client for the Devin CLI itself. An external runtime (hooks, scheduler, Slack) can recreate proactivity locally, but four losses are irreducible: wake-while-idle when the machine is suspended, remote reach without a notification channel, heavyweight offload to a VM, and multi-machine dashboard topologies without a tunnel.</p></details>
   <details class="q"><summary>Does any of this send telemetry or need an account?</summary><p>No. Everything is local-only, read-only by default, and MIT-licensed. Nothing phones home; there is nothing to sign up for.</p></details>
 </div>
 
