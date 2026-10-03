@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://icaro0310.github.io/sitemap.xml

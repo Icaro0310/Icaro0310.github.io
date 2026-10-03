@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Icaro · devin-* ecosystem — community tooling for Devin</title>
+<meta name="description" content="Twenty local-first, open-source tools for Devin (Cognition AI): backups, session search, metrics, knowledge graph, agent memory, QA verification — all Devin-only, zero telemetry, Windows and Linux."/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://icaro0310.github.io/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="devin-* — community tooling for Devin"/>
+<meta property="og:description" content="Local-first open-source tooling for Devin: backup, search, metrics, memory, QA. Devin-only, zero telemetry."/>
+<meta property="og:url" content="https://icaro0310.github.io/"/>
+<meta name="twitter:card" content="summary"/>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Person",
+ "name":"Icaro",
+ "url":"https://github.com/Icaro0310",
+ "sameAs":["https://github.com/Icaro0310"]
+}
+</script>
+<style>
+:root{
+  --bg:#fbfbfd; --card:rgba(255,255,255,.62); --line:rgba(0,0,0,.08);
+  --ink:#1d1d1f; --sub:#6e6e73; --acc:#0071e3; --acc2:#bf5af2;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --bg:#000; --card:rgba(28,28,30,.55); --line:rgba(255,255,255,.10);
+    --ink:#f5f5f7; --sub:#a1a1a6; --acc:#2997ff; --acc2:#bf5af2;
+  }
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','Segoe UI','Helvetica Neue',Arial,sans-serif;
+  background:var(--bg);color:var(--ink);
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  min-height:100vh;
+}
+.orb{position:fixed;border-radius:50%;filter:blur(90px);z-index:-1;pointer-events:none}
+.o1{width:560px;height:560px;top:-160px;right:-120px;background:var(--acc);opacity:.16}
+.o2{width:480px;height:480px;bottom:-140px;left:-120px;background:var(--acc2);opacity:.10}
+.wrap{max-width:1060px;margin:0 auto;padding:0 28px}
+header{padding:120px 0 64px;text-align:center}
+.eyebrow{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--acc);font-weight:600;margin-bottom:22px}
+h1{font-size:clamp(52px,9vw,104px);font-weight:650;letter-spacing:-.045em;line-height:1.02}
+h1 .a{color:var(--acc)}
+.lede{max-width:640px;margin:26px auto 0;font-size:clamp(17px,2.2vw,21px);line-height:1.55;color:var(--sub);letter-spacing:-.01em}
+.pills{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+.pill{font-size:13px;font-weight:500;color:var(--sub);border:1px solid var(--line);border-radius:980px;padding:7px 16px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:var(--card)}
+h2{font-size:15px;letter-spacing:.18em;text-transform:uppercase;color:var(--sub);font-weight:600;margin:84px 0 22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
+a.card{
+  display:block;text-decoration:none;color:inherit;
+  background:var(--card);border:1px solid var(--line);border-radius:20px;
+  padding:22px 24px 20px;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+  transition:transform .28s cubic-bezier(.2,.7,.2,1),border-color .28s,box-shadow .28s;
+}
+a.card:hover{transform:translateY(-3px);border-color:var(--acc);box-shadow:0 12px 40px rgba(0,0,0,.08)}
+.card h3{font-size:17px;font-weight:600;letter-spacing:-.015em;margin-bottom:7px}
+.card h3 .mono{font-family:ui-monospace,'SF Mono',SFMono-Regular,Menlo,monospace;font-size:15px}
+.card p{font-size:14px;line-height:1.5;color:var(--sub)}
+.tag{display:inline-block;margin-top:12px;font-size:11.5px;font-weight:600;color:var(--acc);letter-spacing:.02em}
+footer{padding:90px 0 60px;text-align:center}
+footer .cta{
+  display:inline-block;background:var(--acc);color:#fff;text-decoration:none;
+  font-size:16px;font-weight:600;padding:15px 34px;border-radius:980px;
+  transition:transform .25s,box-shadow .25s;
+}
+footer .cta:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,113,227,.35)}
+.fine{margin-top:26px;font-size:12.5px;color:var(--sub)}
+.fine a{color:var(--sub)}
+</style>
+</head>
+<body>
+<div class="orb o1"></div><div class="orb o2"></div>
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">Community tooling · open source</div>
+  <h1>devin-<span class="a">*</span></h1>
+  <p class="lede">Twenty local-first tools that turn Devin's own session data into
+  backups, search, metrics, memory and QA. No cloud, no telemetry,
+  nothing to sign up for — just your Devin install.</p>
+  <div class="pills">
+    <span class="pill">20 tools</span>
+    <span class="pill">Windows · Linux</span>
+    <span class="pill">Zero telemetry</span>
+    <span class="pill">MIT licensed</span>
+  </div>
+</header>
+
+<h2>Foundation</h2>
+<div class="grid">
+  <a class="card" href="https://github.com/Icaro0310/devin-internals-spec"><h3><span class="mono">devin-internals-spec</span></h3><p>Devin's store internals, documented — schema detection, typed parsers, fixtures.</p><span class="tag">specification</span></a>
+  <a class="card" href="https://github.com/Icaro0310/devin-redact"><h3><span class="mono">devin-redact</span></h3><p>Secret/PII redaction that understands tool-call semantics, in-place in SQLite.</p><span class="tag">security</span></a>
+</div>
+
+<h2>Insight</h2>
+<div class="grid">
+  <a class="card" href="https://github.com/Icaro0310/devin-doctor"><h3><span class="mono">devin-doctor</span></h3><p>brew doctor for a Devin install — stores, locks, config, disk → concrete fixes.</p><span class="tag">diagnostics</span></a>
+  <a class="card" href="https://github.com/Icaro0310/devin-history"><h3><span class="mono">devin-history</span></h3><p>Session history → Markdown, JSON, CSV, Obsidian-ready.</p><span class="tag">export</span></a>
+  <a class="card" href="https://github.com/Icaro0310/devin-pm"><h3><span class="mono">devin-pm</span></h3><p>Project manager over sessions — rollups, milestones, status reports.</p><span class="tag">reporting</span></a>
+</div>
+
+<h2>Safety</h2>
+<div class="grid">
+  <a class="card" href="https://github.com/Icaro0310/devin-backup"><h3><span class="mono">devin-backup</span></h3><p>Snapshot, verify, restore, rotate — with schema-version manifests.</p><span class="tag">backup</span></a>
+  <a class="card" href="https://github.com/Icaro0310/devin-metrics"><h3><span class="mono">devin-metrics</span></h3><p>Cost, tokens, sessions per project/model/day — local only.</p><span class="tag">analytics</span></a>
+  <a class="card" href="https://github.com/Icaro0310/devin-qa-pack"><h3><span class="mono">devin-qa-pack</span></h3><p>Claims vs. reality — PASS / PARTIAL / UNVERIFIED.</p><span class="tag">verification</span></a>
+</div>
+
+<h2>Memory &amp; recall</h2>
+<div class="grid">
+  <a class="card" href="https://github.com/Icaro0310/devin-evals"><h3><span class="mono">devin-evals</span></h3><p>Replay recorded sessions against rubric graders, deterministically.</p><span class="tag">evaluation</span></a>
+  <a class="card" href="https://github.com/Icaro0310/devin-graph"><h3><span class="mono">devin-graph</span></h3><p>Knowledge graph — sessions ↔ projects ↔ files ↔ tools.</p><span class="tag">graph</span></a>
+  <a class="card" href="https://github.com/Icaro0310/devin-search"><h3><span class="mono">devin-search</span></h3><p>FTS5 full-text search across every session.</p><span class="tag">search</span></a>
+</div>
+
+<h2>Agent plumbing</h2>
+<div class="grid">
+  <a class="card" href="https://github.com/Icaro0310/devin-bridge"><h3><span class="mono">devin-bridge</span></h3><p>Policy-gated ACP client — allow / deny / ask rules.</p><span class="tag">acp</span></a>
+  <a class="card" href="https://github.com/Icaro0310/devin-memory"><h3><span class="mono">devin-memory</span></h3><p>Anti-poisoning memory — provenance, versioning, quarantine.</p><span class="tag">memory</span></a>
+</div>
+
+<h2>Ops</h2>
+<div class="grid">
+  <a class="card" href="https://github.com/Icaro0310/devin-janitor"><h3><span class="mono">devin-janitor</span></h3><p>Session lifecycle — export-then-delete, tiered, dry-run first.</p><span class="tag">automation</span></a>
+  <a class="card" href="https://github.com/Icaro0310/devin-orchestrator"><h3><span class="mono">devin-orchestrator</span></h3><p>Background-worker fan-out — deterministic planner, caps, no nesting.</p><span class="tag">orchestration</span></a>
+</div>
+
+<h2>Related</h2>
+<div class="grid">
+  <a class="card" href="https://github.com/Icaro0310/poordjaevin"><h3><span class="mono">poordjaevin</span></h3><p>Djævin — calibrated decision layer; scores through Devin's own model via ACP.</p><span class="tag">decision layer</span></a>
+  <a class="card" href="https://github.com/Icaro0310/devin-powerups"><h3><span class="mono">devin-powerups</span></h3><p>Maintainer hub — registry, scaffolder, weekly reports.</p><span class="tag">meta</span></a>
+  <a class="card" href="https://github.com/Icaro0310/devin-office"><h3><span class="mono">devin-office</span></h3><p>Pixel-art office rendering live Devin activity as animated characters.</p><span class="tag">dashboard</span></a>
+  <a class="card" href="https://github.com/Icaro0310/qwenpaw-suite"><h3><span class="mono">qwenpaw-suite</span></h3><p>Optional add-on — Ollama ↔ OpenAI bridge for self-hosted model operators.</p><span class="tag">optional</span></a>
+</div>
+
+<footer>
+  <a class="cta" href="https://github.com/Icaro0310">github.com/Icaro0310</a>
+  <p class="fine">Community project — not affiliated with Cognition AI.
+  Devin is a trademark of Cognition AI.</p>
+</footer>
+
+</div>
+</body>
+</html>
