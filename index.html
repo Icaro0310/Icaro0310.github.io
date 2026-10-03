@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Ícaro Galvão · QA Engineer — devin-* ecosystem, community tooling for Devin</title>
-<meta name="description" content="Ícaro Galvão, QA Engineer — author of the devin-* ecosystem: twenty local-first, open-source tools for Devin (Cognition AI). Backups, session search, metrics, knowledge graph, agent memory, QA verification — Devin-only, zero telemetry, Windows and Linux."/>
+<title>Ícaro Galvão · Senior QA Engineer — devin-* ecosystem, local-first tooling for AI coding agents</title>
+<meta name="description" content="Ícaro Galvão, Senior QA Engineer — author of the devin-* ecosystem: twenty local-first, open-source tools for Devin (Cognition AI) and AI coding agents. Backups, session search, metrics, memory, QA verification — zero telemetry, Windows and Linux."/>
 <meta name="robots" content="index,follow"/>
 <meta name="author" content="Ícaro Galvão"/>
 <link rel="canonical" href="https://icaro0310.github.io/"/>
 <meta property="og:type" content="profile"/>
-<meta property="og:title" content="Ícaro Galvão · QA Engineer — devin-* ecosystem"/>
-<meta property="og:description" content="Local-first open-source tooling for Devin: backup, search, metrics, memory, QA. Devin-only, zero telemetry."/>
+<meta property="og:title" content="Ícaro Galvão · Senior QA Engineer — devin-* ecosystem"/>
+<meta property="og:description" content="Local-first open-source tooling for Devin and AI coding agents: backup, search, metrics, memory, QA. Zero telemetry."/>
 <meta property="og:url" content="https://icaro0310.github.io/"/>
 <meta name="twitter:card" content="summary"/>
 <script type="application/ld+json">
@@ -19,9 +19,10 @@
  "@type":"Person",
  "name":"Ícaro Galvão",
  "alternateName":"Icaro0310",
- "jobTitle":"QA Engineer",
+ "jobTitle":"Senior QA Engineer",
  "url":"https://icaro0310.github.io/",
- "sameAs":["https://github.com/Icaro0310","https://www.linkedin.com/in/ícaro-galvão-do-nascimento-663601280/"]
+ "sameAs":["https://github.com/Icaro0310","https://www.linkedin.com/in/ícaro-galvão-do-nascimento-663601280/"],
+ "knowsAbout":["Quality Assurance","Developer Tooling","AI Coding Agents","Local-first Software"]
 }
 </script>
 <style>
@@ -38,7 +39,7 @@
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
-  font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','Segoe UI','Helvetica Neue',Arial,sans-serif;
+  font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text','Segoe UI','Helvetica Neue',Arial,sans-serif;
   background:var(--bg);color:var(--ink);
   -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
   min-height:100vh;
@@ -50,18 +51,14 @@ body{
 header{padding:120px 0 64px;text-align:center}
 .eyebrow{font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--acc);font-weight:600;margin-bottom:22px}
 h1{font-size:clamp(52px,9vw,104px);font-weight:650;letter-spacing:-.045em;line-height:1.02}
-h1 .a{color:var(--acc)}
+h1 a{color:inherit;text-decoration:none;transition:color .2s}
+h1 a:hover{color:var(--acc)}
+.roleline{margin-top:14px;font-size:clamp(15px,2vw,18px);font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--sub)}
 .lede{max-width:640px;margin:26px auto 0;font-size:clamp(17px,2.2vw,21px);line-height:1.55;color:var(--sub);letter-spacing:-.01em}
-.byline{margin-top:28px}
-.byline .name{
-  display:inline-block;font-size:clamp(30px,4.2vw,44px);font-weight:650;
-  letter-spacing:-.03em;color:var(--ink);text-decoration:none;
-  transition:color .2s ease;
-}
-.byline .name:hover{color:var(--acc)}
-.byline .role{display:block;margin-top:6px;font-size:15px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--sub)}
-.pills{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:34px}
-.pill{font-size:13px;font-weight:500;color:var(--sub);border:1px solid var(--line);border-radius:980px;padding:7px 16px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:var(--card)}
+.links{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+a.pill{font-size:13px;font-weight:500;color:var(--sub);border:1px solid var(--line);border-radius:980px;padding:7px 16px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:var(--card);text-decoration:none;transition:color .2s,border-color .2s}
+a.pill:hover{color:var(--acc);border-color:var(--acc)}
+span.pill{font-size:13px;font-weight:500;color:var(--sub);border:1px solid var(--line);border-radius:980px;padding:7px 16px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:var(--card)}
 h2{font-size:15px;letter-spacing:.18em;text-transform:uppercase;color:var(--sub);font-weight:600;margin:84px 0 22px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
 a.card{
@@ -75,6 +72,22 @@ a.card:hover{transform:translateY(-3px);border-color:var(--acc);box-shadow:0 12p
 .card h3 .mono{font-family:ui-monospace,'SF Mono',SFMono-Regular,Menlo,monospace;font-size:15px}
 .card p{font-size:14px;line-height:1.5;color:var(--sub)}
 .tag{display:inline-block;margin-top:12px;font-size:11.5px;font-weight:600;color:var(--acc);letter-spacing:.02em}
+.about{max-width:640px;margin:0 auto}
+.about p{font-size:16px;line-height:1.65;color:var(--sub);margin-bottom:16px}
+.about p b{color:var(--ink);font-weight:600}
+.qa{max-width:720px;margin:0 auto}
+details.q{
+  border:1px solid var(--line);border-radius:14px;background:var(--card);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  padding:16px 20px;margin-bottom:10px;
+}
+details.q summary{cursor:pointer;font-size:15px;font-weight:600;letter-spacing:-.01em;list-style:none}
+details.q summary::-webkit-details-marker{display:none}
+details.q summary::after{content:"+";float:right;color:var(--acc);font-weight:600}
+details.q[open] summary::after{content:"–"}
+details.q p{margin-top:10px;font-size:14px;line-height:1.55;color:var(--sub)}
+details.q p .mono{font-family:ui-monospace,'SF Mono',SFMono-Regular,Menlo,monospace;font-size:13px}
+details.q a{color:var(--acc);text-decoration:none}
 footer{padding:90px 0 60px;text-align:center}
 footer .cta{
   display:inline-block;background:var(--acc);color:#fff;text-decoration:none;
@@ -91,19 +104,33 @@ footer .cta:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,113,2
 <div class="wrap">
 
 <header>
-  <div class="eyebrow">Community tooling · open source</div>
-  <h1>devin-<span class="a">*</span></h1>
-  <p class="lede">Twenty local-first tools that turn Devin's own session data into
-  backups, search, metrics, memory and QA. No cloud, no telemetry,
-  nothing to sign up for — just your Devin install.</p>
-  <p class="byline"><a class="name" href="https://www.linkedin.com/in/ícaro-galvão-do-nascimento-663601280/">Ícaro Galvão</a><span class="role">QA Engineer</span></p>
-  <div class="pills">
+  <div class="eyebrow">Developer tooling · open source</div>
+  <h1><a href="https://www.linkedin.com/in/ícaro-galvão-do-nascimento-663601280/">Ícaro Galvão</a></h1>
+  <p class="roleline">Senior QA Engineer · AI Agents</p>
+  <p class="lede">I build <b style="color:var(--ink)">devin-<span style="color:var(--acc)">*</span></b> — twenty local-first
+  tools that turn Devin's own session data into backups, search, metrics,
+  memory and QA. No cloud, no telemetry, nothing to sign up for.</p>
+  <div class="links">
+    <a class="pill" href="https://github.com/Icaro0310">GitHub</a>
+    <a class="pill" href="https://www.linkedin.com/in/ícaro-galvão-do-nascimento-663601280/">LinkedIn</a>
     <span class="pill">20 tools</span>
     <span class="pill">Windows · Linux</span>
-    <span class="pill">Zero telemetry</span>
-    <span class="pill">MIT licensed</span>
+    <span class="pill">MIT</span>
   </div>
 </header>
+
+<h2>About</h2>
+<div class="about">
+  <p><b>Senior QA Engineer</b>, post-graduated in Software Testing and Software
+  Engineering. I work at the intersection of quality engineering and
+  developer tooling — and I spend my open-source time building instruments
+  for the thing most agent platforms leave opaque: their own local data.</p>
+  <p>The <b>devin-*</b> ecosystem is that work in public: twenty MIT-licensed,
+  local-first utilities for the Devin CLI — diagnostics, history export,
+  backup, metrics, memory, evaluation and a calibrated decision layer that
+  runs on Devin's own model. Every tool is read-only by default, documented
+  in English and Portuguese, and works with no VM, tunnel or extra services.</p>
+</div>
 
 <h2>Foundation</h2>
 <div class="grid">
@@ -152,9 +179,19 @@ footer .cta:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,113,2
   <a class="card" href="https://github.com/Icaro0310/qwenpaw-suite"><h3><span class="mono">qwenpaw-suite</span></h3><p>Optional add-on — Ollama ↔ OpenAI bridge for self-hosted model operators.</p><span class="tag">optional</span></a>
 </div>
 
+<h2>Why devin-*?</h2>
+<div class="qa">
+  <details class="q"><summary>Where does the Devin CLI store its session data?</summary><p>In local SQLite stores under <span class="mono">~/.local/share/devin/cli/</span> plus <span class="mono">~/.config/Devin/</span> on Linux, or <span class="mono">%APPDATA%\devin\</span> and <span class="mono">%APPDATA%\Devin\</span> on Windows. <a href="https://github.com/Icaro0310/devin-internals-spec">devin-internals-spec</a> documents the schema and detection logic.</p></details>
+  <details class="q"><summary>How do I export Devin sessions?</summary><p><a href="https://github.com/Icaro0310/devin-history">devin-history</a> reads the sessions DB and exports Markdown, JSON or CSV — including Obsidian-ready notes.</p></details>
+  <details class="q"><summary>How do I back up and restore Devin's local data?</summary><p><a href="https://github.com/Icaro0310/devin-backup">devin-backup</a> snapshots the stores with schema-version manifests, then verifies, restores and rotates them.</p></details>
+  <details class="q"><summary>How do I remove secrets from exported history before sharing?</summary><p><a href="https://github.com/Icaro0310/devin-redact">devin-redact</a> understands tool-call semantics, not just plaintext patterns — redacting in place inside SQLite, with a <span class="mono">.bak</span> safety copy.</p></details>
+  <details class="q"><summary>Can I run all of this on a locked-down corporate machine?</summary><p>Yes. The tools need the Devin CLI and Python ≥ 3.10 — no VM, no tunnel, no model server, no Slack, no Obsidian. The only Node.js dependency is <a href="https://github.com/Icaro0310/devin-bridge">devin-bridge</a>, an ACP client for the Devin CLI itself.</p></details>
+  <details class="q"><summary>Does any of this send telemetry or need an account?</summary><p>No. Everything is local-only, read-only by default, and MIT-licensed. Nothing phones home; there is nothing to sign up for.</p></details>
+</div>
+
 <footer>
   <a class="cta" href="https://github.com/Icaro0310">github.com/Icaro0310</a>
-  <p class="fine">Built by <a href="https://www.linkedin.com/in/ícaro-galvão-do-nascimento-663601280/">Ícaro Galvão</a>, QA Engineer.
+  <p class="fine">Built by <a href="https://www.linkedin.com/in/ícaro-galvão-do-nascimento-663601280/">Ícaro Galvão</a>, Senior QA Engineer.
   Community project — not affiliated with Cognition AI.
   Devin is a trademark of Cognition AI.</p>
 </footer>
