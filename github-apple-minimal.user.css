@@ -1,0 +1,157 @@
+/* ==UserStyle==
+@name           GitHub — Apple Minimal
+@namespace      github.com
+@version        1.0.0
+@description    A restrained, Apple-inspired skin for GitHub: SF typography feel, softer shadows, subtler borders, more whitespace. Works on both light and dark GitHub themes.
+@author         Icaro0310
+@homepageURL    https://icaro0310.github.io/
+@updateURL      https://icaro0310.github.io/github-apple-minimal.user.css
+@license        MIT
+==/UserStyle== */
+
+@-moz-document domain("github.com") {
+
+  /* ---------------------------------------------------------
+     Typography — SF feel, tighter tracking on headings,
+     calmer body text. GitHub already uses system fonts;
+     we refine the rhythm rather than replacing it.
+     --------------------------------------------------------- */
+  body {
+    letter-spacing: -0.011em;
+  }
+
+  h1, h2, h3, .markdown-body h1, .markdown-body h2, .markdown-body h3 {
+    letter-spacing: -0.022em;
+    font-weight: 600;
+  }
+
+  /* ---------------------------------------------------------
+     Cards & surfaces — softer shadows, subtler borders,
+     slightly larger radii (Apple's ~12px card language)
+     --------------------------------------------------------- */
+  .Box, .Box--responsive,
+  .box, .border.rounded-2, .border.rounded-1,
+  .dashboard-sidebar .Box,
+  .news .Box, .ProfileReadme__content .Box {
+    border-radius: 12px !important;
+  }
+
+  .Box, .color-shadow-small, .color-shadow-medium {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04),
+                0 4px 16px rgba(0, 0, 0, 0.05) !important;
+  }
+
+  /* subtler borders everywhere */
+  .border, .border-top, .border-bottom, .border-left, .border-right,
+  .Box, .Box-row, .color-border-default, .color-border-muted {
+    border-color: rgba(140, 140, 150, 0.18) !important;
+  }
+
+  /* ---------------------------------------------------------
+     Whitespace — Apple's signature is air
+     --------------------------------------------------------- */
+  .Layout-sidebar, .Layout-main {
+    padding-top: 8px;
+  }
+
+  .Box-row {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+  }
+
+  .markdown-body {
+    line-height: 1.65;
+  }
+
+  /* repo header breathing room */
+  #repository-container-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* ---------------------------------------------------------
+     Avatars — fully round (Apple ID style)
+     --------------------------------------------------------- */
+  .avatar, .avatar-user {
+    border-radius: 50% !important;
+  }
+
+  /* ---------------------------------------------------------
+     Buttons — pill shape, subtle press feedback
+     --------------------------------------------------------- */
+  .btn, .Button {
+    border-radius: 980px !important;
+    transition: transform 0.18s cubic-bezier(0.2, 0.7, 0.2, 1),
+                box-shadow 0.18s ease, background-color 0.18s ease;
+  }
+
+  .btn:hover, .Button:hover {
+    transform: translateY(-1px);
+  }
+
+  .btn:active, .Button:active {
+    transform: translateY(0);
+  }
+
+  /* keep compact inputs from looking weird with pill radius */
+  .btn-sm, .Button--small {
+    border-radius: 980px !important;
+  }
+
+  /* ---------------------------------------------------------
+     Links & accents — Apple's #0071e3 / #2997ff vibe.
+     We only nudge link color on light theme; on dark themes
+     GitHub's own blue already reads similarly.
+     --------------------------------------------------------- */
+  html[data-color-mode="light"] a,
+  html[data-color-mode="light"] .Link--primary {
+    color: #0071e3;
+  }
+
+  /* ---------------------------------------------------------
+     De-emphasized chrome — fade nav chrome a touch
+     --------------------------------------------------------- */
+  .Header {
+    backdrop-filter: saturate(1.4) blur(12px);
+    -webkit-backdrop-filter: saturate(1.4) blur(12px);
+  }
+
+  /* contribution graph: slightly rounded cells */
+  .ContributionCalendar-day {
+    rx: 3px;
+  }
+
+  /* ---------------------------------------------------------
+     Tabs — underline pill underline, cleaner spacing
+     --------------------------------------------------------- */
+  .UnderlineNav-item {
+    border-radius: 8px;
+  }
+
+  /* ---------------------------------------------------------
+     Code — SF Mono feel, slightly larger line height
+     --------------------------------------------------------- */
+  .blob-code-inner, .react-code-text,
+  code, pre, .markdown-body code, .markdown-body pre {
+    font-family: ui-monospace, "SF Mono", SFMono-Regular, Menlo,
+                 Consolas, monospace !important;
+  }
+
+  .blob-code-inner {
+    line-height: 1.6;
+  }
+
+  /* ---------------------------------------------------------
+     Subtle motion polish on interactive surfaces
+     --------------------------------------------------------- */
+  .Box-row, .ListItem, .issue-list-item {
+    transition: background-color 0.18s ease;
+  }
+
+  /* ---------------------------------------------------------
+     README hero images get gentle corner rounding
+     --------------------------------------------------------- */
+  .markdown-body img {
+    border-radius: 8px;
+  }
+}
