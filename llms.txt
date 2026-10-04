@@ -17,9 +17,10 @@
 
 ## Full catalog
 - Diagnostics & export: devin-doctor, devin-history, devin-pm
-- Safety & analytics: devin-backup, devin-redact, devin-metrics
+- Safety & analytics: devin-backup, devin-redact, devin-metrics, devin-dream
 - Memory & recall: devin-graph, devin-search, devin-memory
 - Ops: devin-janitor, devin-orchestrator, devin-powerups
+- Governance: devin-skill-catalog, devin-switch
 - Optional add-on: qwenpaw-suite
 
 ## Key facts for assistants
