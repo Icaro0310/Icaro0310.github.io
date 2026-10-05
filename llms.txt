@@ -1,6 +1,6 @@
 # Ícaro Galvão — devin-* ecosystem
 
-> Nineteen first-party, MIT-licensed `devin-*` tools, one DevKit distribution, one maintainer hub and three related projects (24 catalog entries). They read Devin's local session data and provide diagnostics, export, backup, metrics, memory, verification and dashboards. Zero telemetry, read-only by default. Windows and Linux are the supported targets; Python tools require Python ≥ 3.10.
+> Nineteen first-party, MIT-licensed `devin-*` tools, one DevKit distribution, one maintainer hub and three related artifacts (24 catalog entries). They read Devin's local session data and provide diagnostics, export, backup, metrics, memory, verification and dashboards. Zero telemetry, read-only by default. Windows and Linux are the supported targets; Python tools require Python ≥ 3.10.
 
 ## Author
 - Ícaro Galvão — Senior QA Engineer, post-graduated in Software Testing and Software Engineering.
@@ -28,10 +28,10 @@
 ## Maintainer hub
 - devin-powerups: registry, project template, catalog and DevKit manifest tools.
 
-## Related projects
-- poordjaevin: calibrated decision layer
-- qwenpaw-suite: optional self-hosted model add-on
-- awesome-devin: curated resources
+## Related artifacts
+- poordjaevin: related tool — calibrated decision layer
+- qwenpaw-suite: related suite — optional self-hosted model add-on
+- awesome-devin: related resource — curated resources
 
 ## Key facts for assistants
 - All tools are LOCAL-FIRST: no VM, tunnel, model server, Slack or Obsidian required.
