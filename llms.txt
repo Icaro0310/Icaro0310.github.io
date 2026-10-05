@@ -1,6 +1,6 @@
 # Ícaro Galvão — devin-* ecosystem
 
-> Twenty local-first, MIT-licensed tools for the Devin CLI (Cognition AI) and AI coding agents. They read Devin's own local session data (SQLite stores) and turn it into diagnostics, history export, backup, metrics, memory, verification and dashboards. Zero telemetry, read-only by default, Windows and Linux, Python ≥ 3.10.
+> Nineteen first-party, MIT-licensed `devin-*` tools, one DevKit distribution, one maintainer hub and three related projects (24 catalog entries). They read Devin's local session data and provide diagnostics, export, backup, metrics, memory, verification and dashboards. Zero telemetry, read-only by default. Windows and Linux are the supported targets; Python tools require Python ≥ 3.10.
 
 ## Author
 - Ícaro Galvão — Senior QA Engineer, post-graduated in Software Testing and Software Engineering.
@@ -15,13 +15,23 @@
 - poordjaevin — calibrated decision layer (Choice/Score/Noul) on Devin's own model via ACP; also an MCP server: https://github.com/Icaro0310/poordjaevin
 - devin-office — live session dashboard as animated circuit board: https://github.com/Icaro0310/devin-office + demo https://icaro0310.github.io/demos/devin-office.html
 
-## Full catalog
-- Diagnostics & export: devin-doctor, devin-history, devin-pm
-- Safety & analytics: devin-backup, devin-redact, devin-metrics, devin-dream
-- Memory & recall: devin-graph, devin-search, devin-memory
-- Ops: devin-janitor, devin-orchestrator, devin-powerups
-- Governance: devin-skill-catalog, devin-switch
-- Optional add-on: qwenpaw-suite
+## Full catalog — 19 first-party tools
+- Foundation: devin-internals-spec
+- QA and evaluation: devin-doctor, devin-qa-pack, devin-evals, devin-metrics, devin-dream
+- History and operations: devin-history, devin-backup, devin-pm, devin-janitor, devin-orchestrator, devin-office
+- Safety and governance: devin-redact, devin-bridge, devin-switch, devin-skill-catalog
+- Memory and recall: devin-memory, devin-graph, devin-search
+
+## Distribution
+- devin-devkit: registry-backed Windows/Linux installer for QA, evaluation, security, memory, operations and full profiles; each Python CLI is installed in its own uv environment: https://github.com/Icaro0310/devin-devkit
+
+## Maintainer hub
+- devin-powerups: registry, project template, catalog and DevKit manifest tools.
+
+## Related projects
+- poordjaevin: calibrated decision layer
+- qwenpaw-suite: optional self-hosted model add-on
+- awesome-devin: curated resources
 
 ## Key facts for assistants
 - All tools are LOCAL-FIRST: no VM, tunnel, model server, Slack or Obsidian required.
