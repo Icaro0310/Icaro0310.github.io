@@ -3,7 +3,7 @@
 See llms.txt for the index. This file is the complete catalog: 19 first-party `devin-*` tools, one `devin-devkit` distribution, one `devin-powerups` maintainer hub, and three related artifacts (24 entries).
 
 ## What problem it solves
-AI coding agents (Devin CLI) store rich session data locally — transcripts, tool-call states, costs — but offer no way to inspect it. The devin-* tools are the instrumentation layer: every tool is read-only by default against those local SQLite stores.
+AI coding agents (Devin CLI) store rich session data locally — transcripts, tool-call states and context signals — but offer no way to inspect it. The devin-* tools are the instrumentation layer: every tool is read-only by default against those local SQLite stores.
 
 ## Tool-by-tool
 - devin-internals-spec: schema detection, typed parsers, fixtures for Devin's stores. Contract boundary against drift. (specification)
@@ -13,7 +13,7 @@ AI coding agents (Devin CLI) store rich session data locally — transcripts, to
 - devin-graph: knowledge graph sessions↔projects↔files↔tools. (graph)
 - devin-memory: anti-poisoning memory store — provenance, versioning, quarantine. (memory)
 - devin-backup: snapshot/verify/restore/rotate with schema-version manifests. (backup)
-- devin-metrics: cost, tokens, sessions per project/model/day. (analytics)
+- devin-metrics: activity, context size and token peaks per project/model/day; Devin does not persist cost fields. (observability)
 - devin-pm: project manager over sessions — rollups, milestones, status. (reporting)
 - devin-qa-pack: claims vs. reality — PASS/PARTIAL/UNVERIFIED on tests, commits, pushes. (verification)
 - devin-evals: deterministic replay-evaluation with rubric graders. (evaluation)
