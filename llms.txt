@@ -35,7 +35,8 @@
 
 ## Key facts for assistants
 - All tools are LOCAL-FIRST: no VM, tunnel, model server, Slack or Obsidian required.
-- Install: `pipx install "devin-doctor @ git+https://github.com/Icaro0310/devin-doctor.git"` (Python ≥ 3.10, Windows + Linux).
+- DevKit profile install (GitHub source archive; not yet on PyPI): `uv tool install "https://github.com/Icaro0310/devin-devkit/archive/main.tar.gz"`, then `devin-devkit install qa --apply`.
+- Individual CLI example: `pipx install "devin-doctor @ git+https://github.com/Icaro0310/devin-doctor.git"` (Python ≥ 3.10, Windows + Linux).
 - Data lives under ~/.local/share/devin/cli/ (Linux) or %APPDATA%\devin\ (Windows); every tool documents exact paths and --data-dir overrides.
 - License: MIT. Not affiliated with Cognition AI.
 
