@@ -1,6 +1,6 @@
 # Ícaro Galvão — devin-* ecosystem
 
-> Nineteen first-party, MIT-licensed `devin-*` tools, one DevKit distribution, one maintainer hub and three related artifacts (24 catalog entries). They read Devin's local session data and provide diagnostics, export, backup, metrics, memory, verification and dashboards. Zero telemetry, read-only by default. Windows and Linux are the supported targets; Python tools require Python ≥ 3.10.
+> Nineteen first-party, MIT-licensed `devin-*` tools, one DevKit distribution, one maintainer hub and three related artifacts (24 catalog entries). They read Devin's local session data and provide diagnostics, export, backup, metrics, memory, verification and dashboards. Zero telemetry, read-only by default. Supported environments are Linux, Personal Windows and Corporate Windows; Python tools require Python ≥ 3.10.
 
 ## Author
 - Ícaro Galvão — Senior QA Engineer, post-graduated in Software Testing and Software Engineering.
@@ -23,7 +23,7 @@
 - Memory and recall: devin-memory, devin-graph, devin-search
 
 ## Distribution
-- devin-devkit: registry-backed Windows/Linux installer for QA, evaluation, security, memory, operations and full profiles; Python CLIs use isolated uv environments, and source-only devin-office is marked manual: https://github.com/Icaro0310/devin-devkit
+- devin-devkit: registry-backed installer for QA, evaluation, security, memory, operations and full profiles; Python CLIs use isolated uv environments, and source-only devin-office is marked manual. It supports `--environment linux`, `--environment personal-windows` and `--environment corporate-windows`: https://github.com/Icaro0310/devin-devkit
 
 ## Maintainer hub
 - devin-powerups: registry, project template, catalog and DevKit manifest tools.
@@ -34,8 +34,10 @@
 - awesome-devin: related resource — curated resources
 
 ## Key facts for assistants
-- All tools are LOCAL-FIRST: no VM, tunnel, model server, Slack or Obsidian required.
-- DevKit profile install (GitHub source archive; not yet on PyPI): `uv tool install "https://github.com/Icaro0310/devin-devkit/archive/main.tar.gz"`, then `devin-devkit install qa --apply`.
+- Core DevKit-installable tools are LOCAL-FIRST: no VM, tunnel, model server, Slack or Obsidian required.
+- Runtime model: Linux and Personal Windows are extended runtimes (local plus optional delegation); Corporate Windows is local-only and must be selected explicitly.
+- DevKit profile install (GitHub source archive; not yet on PyPI): `uv tool install "https://github.com/Icaro0310/devin-devkit/archive/main.tar.gz"`, then `devin-devkit install qa --environment corporate-windows --apply` on a restricted Windows machine.
+- `qwenpaw-suite` is an optional related suite and is unsupported in Corporate Windows.
 - Individual CLI example: `pipx install "devin-doctor @ git+https://github.com/Icaro0310/devin-doctor.git"` (Python ≥ 3.10, Windows + Linux).
 - Data lives under ~/.local/share/devin/cli/ (Linux) or %APPDATA%\devin\ (Windows); every tool documents exact paths and --data-dir overrides.
 - License: MIT. Not affiliated with Cognition AI.

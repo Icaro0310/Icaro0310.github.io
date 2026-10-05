@@ -26,8 +26,13 @@ AI coding agents (Devin CLI) store rich session data locally — transcripts, to
 - devin-skill-catalog: skill/rule lifecycle — scan, lint, G1–G3 evidence gates, quarantine → active, bundles. (governance)
 - devin-switch: swap Devin config profiles (hooks, MCP, models) — verified snapshot, dry-run, rollback. (profiles)
 
+## Execution environments
+- Linux: extended runtime — local execution plus optional Devin VM/QwenPaw delegation when supported.
+- Personal Windows: extended runtime — local execution plus optional delegated workloads and Linux-compatible VM tooling.
+- Corporate Windows: local-only runtime — no VM, QwenPaw, Slack dependency, external compute, or workload delegation; selected explicitly with `--environment corporate-windows`.
+
 ## Distribution
-- devin-devkit: profile-based Windows/Linux installer; reads the registry manifest and installs isolated CLIs with uv, plus the optional Node bridge with npm. `devin-office` remains a manual source-only service. https://github.com/Icaro0310/devin-devkit
+- devin-devkit: profile-based installer for Linux, Personal Windows and Corporate Windows; reads the registry manifest and installs isolated CLIs with uv, plus the optional Node bridge with npm. `devin-office` remains a manual source-only service. https://github.com/Icaro0310/devin-devkit
 
 ## Maintainer hub
 - devin-powerups: registry source of truth, profiles, catalog exporters, project template and maintainer utilities.

@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Ícaro Galvão · Senior QA Engineer — devin-* ecosystem, local-first tooling for AI coding agents</title>
-<meta name="description" content="Ícaro Galvão, Senior QA Engineer — author of 19 first-party local-first Devin tools, distributed through the Devin DevKit alongside its public registry and related artifacts. Windows and Linux; zero telemetry."/>
+<meta name="description" content="Ícaro Galvão, Senior QA Engineer — author of 19 first-party local-first Devin tools, distributed through the Devin DevKit alongside its public registry and related artifacts. Linux, Personal Windows and Corporate Windows; zero telemetry."/>
 <meta name="robots" content="index,follow"/>
 <meta name="author" content="Ícaro Galvão"/>
 <link rel="canonical" href="https://icaro0310.github.io/"/>
@@ -60,7 +60,7 @@
  "@context":"https://schema.org",
  "@type":"SoftwareApplication",
  "name":"devin-devkit",
- "description":"Registry-driven Windows/Linux installer for selected Devin tool profiles, using isolated uv tools and npm for the Node bridge.",
+ "description":"Registry-driven installer for selected Devin tool profiles across Linux, Personal Windows and Corporate Windows, using isolated uv tools and npm for the Node bridge.",
  "codeRepository":"https://github.com/Icaro0310/devin-devkit",
  "applicationCategory":"DeveloperApplication",
  "operatingSystem":"Windows, Linux",
@@ -104,7 +104,7 @@ a.pill:hover{color:var(--acc);border-color:var(--acc)}
 span.pill{font-size:13px;font-weight:500;color:var(--sub);border:1px solid var(--line);border-radius:980px;padding:7px 16px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:var(--card)}
 h2{font-size:15px;letter-spacing:.18em;text-transform:uppercase;color:var(--sub);font-weight:600;margin:84px 0 22px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
-a.card{
+.card{
   display:block;text-decoration:none;color:inherit;
   background:var(--card);border:1px solid var(--line);border-radius:20px;
   padding:22px 24px 20px;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
@@ -190,7 +190,7 @@ footer .cta:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,113,2
    "name": "Can I run all of this on a locked-down corporate machine?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Yes. The whole catalog needs only the Devin CLI and Python 3.10 or later: no VM, no tunnel, no model server, no Slack, no Obsidian. The only Node.js dependency is devin-bridge, an ACP client for the Devin CLI itself."
+    "text": "The DevKit-installable core needs only the Devin CLI and Python 3.10 or later: no VM, no tunnel, no model server, no Slack, no Obsidian. qwenpaw-suite is an optional related suite and is unsupported in Corporate Windows; devin-bridge needs Node.js 20 or later."
    }
   },
   {
@@ -220,7 +220,7 @@ footer .cta:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,113,2
     <a class="pill" href="https://github.com/Icaro0310">GitHub</a>
     <a class="pill" href="https://www.linkedin.com/in/ícaro-galvão-do-nascimento-663601280/">LinkedIn</a>
     <span class="pill">19 tools · DevKit</span>
-    <span class="pill">Windows · Linux</span>
+    <span class="pill">Linux · Personal Windows · Corporate Windows</span>
     <span class="pill">MIT</span>
   </div>
 </header>
@@ -233,6 +233,13 @@ footer .cta:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,113,2
   <div class="stat"><b>MIT</b><span>licensed</span></div>
 </div>
 
+<h2>Execution environments</h2>
+<div class="grid">
+  <div class="card"><h3>Linux</h3><p>Extended runtime: local execution plus optional delegated workloads through Devin VM or QwenPaw.</p><span class="tag">extended</span></div>
+  <div class="card"><h3>Personal Windows</h3><p>Extended runtime: local Windows execution plus optional delegated workloads and Linux-compatible VM tooling.</p><span class="tag">extended</span></div>
+  <div class="card"><h3>Corporate Windows</h3><p>Local-only runtime: no VM, QwenPaw, Slack dependency, external compute or workload delegation.</p><span class="tag">local only</span></div>
+</div>
+
 <h2>About</h2>
 <div class="about">
   <p><b>Senior QA Engineer</b>, post-graduated in Software Testing and Software
@@ -243,8 +250,9 @@ footer .cta:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,113,2
   local-first tools for the Devin CLI — diagnostics, history export, backup,
   metrics, memory, evaluation and safety. The DevKit distributes selected
   profiles; the maintainer hub and optional integrations remain separate.
-  Windows and Linux guides are provided, and the Devin-only core needs no VM,
-  tunnel or external service.</p>
+  Linux and Personal Windows form the extended runtime with optional VM/QwenPaw
+  delegation; Corporate Windows is an explicit local-only mode. The Devin-only
+  core needs no VM, tunnel or external service.</p>
 </div>
 
 <h2>See it live</h2>
@@ -298,7 +306,7 @@ footer .cta:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,113,2
 
 <h2>Distribution</h2>
 <div class="grid">
-  <a class="card" href="https://github.com/Icaro0310/devin-devkit"><h3><span class="mono">devin-devkit</span></h3><p>Install selected QA, evaluation, security, memory or operations profiles; Python CLIs stay isolated with uv. The source-only devin-office service is marked manual.</p><span class="tag">distribution · Windows · Linux</span></a>
+  <a class="card" href="https://github.com/Icaro0310/devin-devkit"><h3><span class="mono">devin-devkit</span></h3><p>Install selected QA, evaluation, security, memory or operations profiles under an explicit environment; Python CLIs stay isolated with uv. The source-only devin-office service is marked manual.</p><span class="tag">distribution · Linux · Personal Windows · Corporate Windows</span></a>
 </div>
 
 <h2>Maintainer hub</h2>
@@ -319,7 +327,7 @@ footer .cta:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,113,2
   <details class="q"><summary>How do I export Devin sessions?</summary><p><a href="https://github.com/Icaro0310/devin-history">devin-history</a> reads the sessions DB and exports Markdown, JSON or CSV — including Obsidian-ready notes.</p></details>
   <details class="q"><summary>How do I back up and restore Devin's local data?</summary><p><a href="https://github.com/Icaro0310/devin-backup">devin-backup</a> snapshots the stores with schema-version manifests, then verifies, restores and rotates them.</p></details>
   <details class="q"><summary>How do I remove secrets from exported history before sharing?</summary><p><a href="https://github.com/Icaro0310/devin-redact">devin-redact</a> understands tool-call semantics, not just plaintext patterns — redacting in place inside SQLite, with a <span class="mono">.bak</span> safety copy.</p></details>
-  <details class="q"><summary>Can I run all of this on a locked-down corporate machine?</summary><p>Yes — the whole catalog needs only the Devin CLI and Python ≥ 3.10: no VM, no tunnel, no model server, no Slack, no Obsidian. The only Node.js dependency is <a href="https://github.com/Icaro0310/devin-bridge">devin-bridge</a>, an ACP client for the Devin CLI itself. An external runtime (hooks, scheduler, Slack) can recreate proactivity locally, but four losses are irreducible: wake-while-idle when the machine is suspended, remote reach without a notification channel, heavyweight offload to a VM, and multi-machine dashboard topologies without a tunnel.</p></details>
+  <details class="q"><summary>Can I run all of this on a locked-down corporate machine?</summary><p>The DevKit-installable core can. Corporate Windows is an explicit local-only environment: no VM, no tunnel, no model server, no Slack, no Obsidian. The registry marks <a href="https://github.com/Icaro0310/qwenpaw-suite">qwenpaw-suite</a> unsupported there, and <a href="https://github.com/Icaro0310/devin-bridge">devin-bridge</a> needs Node.js ≥ 20 because it is an ACP client for the Devin CLI itself. Heavy offload, wake-while-idle and remote reach remain outside the corporate guarantee.</p></details>
   <details class="q"><summary>Does any of this send telemetry or need an account?</summary><p>No. Everything is local-only, read-only by default, and MIT-licensed. Nothing phones home; there is nothing to sign up for.</p></details>
 </div>
 
