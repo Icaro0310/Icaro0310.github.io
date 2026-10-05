@@ -23,7 +23,7 @@
 - Memory and recall: devin-memory, devin-graph, devin-search
 
 ## Distribution
-- devin-devkit: registry-backed Windows/Linux installer for QA, evaluation, security, memory, operations and full profiles; each Python CLI is installed in its own uv environment: https://github.com/Icaro0310/devin-devkit
+- devin-devkit: registry-backed Windows/Linux installer for QA, evaluation, security, memory, operations and full profiles; Python CLIs use isolated uv environments, and source-only devin-office is marked manual: https://github.com/Icaro0310/devin-devkit
 
 ## Maintainer hub
 - devin-powerups: registry, project template, catalog and DevKit manifest tools.

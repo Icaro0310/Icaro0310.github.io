@@ -27,7 +27,7 @@ AI coding agents (Devin CLI) store rich session data locally — transcripts, to
 - devin-switch: swap Devin config profiles (hooks, MCP, models) — verified snapshot, dry-run, rollback. (profiles)
 
 ## Distribution
-- devin-devkit: profile-based Windows/Linux installer; reads the registry manifest and installs isolated CLIs with uv, plus the optional Node bridge with npm. https://github.com/Icaro0310/devin-devkit
+- devin-devkit: profile-based Windows/Linux installer; reads the registry manifest and installs isolated CLIs with uv, plus the optional Node bridge with npm. `devin-office` remains a manual source-only service. https://github.com/Icaro0310/devin-devkit
 
 ## Maintainer hub
 - devin-powerups: registry source of truth, profiles, catalog exporters, project template and maintainer utilities.
