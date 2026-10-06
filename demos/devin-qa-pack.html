@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>devin-qa-pack — agent assurance demo</title>
+<meta name="description" content="Agent assurance demo: synthetic Devin sessions with labeled defects are audited — claims vs tool-call evidence — and graded, producing PASS / PARTIAL / UNVERIFIED verdicts.">
+<meta property="og:title" content="devin-qa-pack — agent assurance demo">
+<meta property="og:description" content="A deliberately flawed agent session goes in; a defensible PASS / PARTIAL / UNVERIFIED verdict comes out.">
+<meta property="og:image" content="https://icaro0310.github.io/assets/qa-pack-demo.gif">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+  :root{
+    --bg:#0b0e14; --chip:#161b26; --chip-line:#3a4157; --trace:#2a3145;
+    --green:#57d98d; --txt:#e8eaf2; --dim:#7d86a0; --amber:#e8b44a;
+  }
+  *{box-sizing:border-box;margin:0}
+  body{background:var(--bg);color:var(--txt);font:14px/1.5 system-ui,sans-serif;
+    min-height:100vh;display:flex;flex-direction:column;align-items:center;
+    padding:24px 20px 40px}
+  main{max-width:960px;width:100%}
+  header{display:flex;justify-content:space-between;align-items:baseline;
+    width:100%;max-width:960px;margin-bottom:14px}
+  header h1{font-size:15px;font-weight:600;letter-spacing:.4px}
+  header h1 a{color:var(--txt);text-decoration:none}
+  header h1 a:hover{color:var(--green)}
+  header .sub{color:var(--dim);font-size:11px}
+  figure{background:var(--chip);border:1px solid var(--chip-line);
+    border-radius:10px;overflow:hidden}
+  figure img{display:block;width:100%}
+  figcaption{padding:10px 14px;font-size:11px;color:var(--dim);
+    border-top:1px solid var(--trace)}
+  .flow{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;
+    margin:16px 0;font-size:11px;color:var(--dim)}
+  .flow b{color:var(--txt);font-weight:600}
+  .verdicts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+  .v{background:var(--chip);border:1px solid var(--chip-line);border-radius:8px;
+    padding:10px 12px;font-size:11px}
+  .v b{display:block;font-size:12px;letter-spacing:1px;margin-bottom:4px}
+  .v.pass b{color:var(--green)} .v.part b{color:var(--amber)} .v.unv b{color:#e86a6a}
+  .v span{color:var(--dim)}
+  nav{margin-top:18px;font-size:11px;color:var(--dim);display:flex;gap:16px;justify-content:center}
+  nav a{color:var(--dim)}
+  nav a:hover{color:var(--green)}
+  @media (max-width:700px){.verdicts{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <div><h1><a href="https://github.com/Icaro0310/devin-qa-pack">devin-qa-pack</a></h1>
+    <div class="sub">agent assurance — 60-second demo</div></div>
+</header>
+<main>
+  <figure>
+    <img src="../assets/qa-pack-demo.gif" alt="agent-assurance demo — UNVERIFIED, PARTIAL, PASS verdicts"/>
+    <figcaption>A deliberately flawed agent session goes in one end; a defensible,
+      reproducible verdict comes out the other.</figcaption>
+  </figure>
+  <div class="flow">
+    <span><b>devin-dream</b> synthetic sessions →</span>
+    <span><b>devin-inspect</b> schema contract →</span>
+    <span><b>devin-qa-pack</b> claims vs evidence →</span>
+    <span><b>devin-evals</b> rubric grading</span>
+  </div>
+  <div class="verdicts">
+    <div class="v pass"><b>PASS</b><span>every claim is backed by tool-call evidence in the session store.</span></div>
+    <div class="v part"><b>PARTIAL</b><span>some claims verified, others missing evidence — reported, not guessed.</span></div>
+    <div class="v unv"><b>UNVERIFIED</b><span>claims without evidence — the audit refuses to sign off.</span></div>
+  </div>
+  <nav>
+    <a href="https://github.com/Icaro0310/devin-qa-pack/tree/main/examples/agent-assurance">run it yourself →</a>
+    <a href="https://github.com/Icaro0310/devin-qa-pack">repo →</a>
+    <a href="/">← back to site</a>
+  </nav>
+</main>
+</body>
+</html>
