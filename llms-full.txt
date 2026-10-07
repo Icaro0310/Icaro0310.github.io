@@ -3,7 +3,7 @@
 See llms.txt for the index. This file is the complete catalog: 19 first-party `devin-*` tools, one `devin-devkit` distribution, one `devin-powerups` maintainer hub, and three related artifacts (24 entries).
 
 ## What problem it solves
-AI coding agents (Devin CLI) store rich session data locally — transcripts, tool-call states and context signals — but offer no way to inspect it. The devin-* tools are the instrumentation layer: every tool is read-only by default against those local SQLite stores.
+AI coding agents (Devin CLI) store rich session data locally — transcripts, tool-call states and context signals — but offer no way to inspect it. The devin-* tools are the instrumentation layer. They read those local SQLite stores; read-only by default where applicable, and mutating operations are explicit, guarded and dry-run first where supported.
 
 ## Tool-by-tool
 - devin-internals-spec: schema detection, typed parsers, fixtures for Devin's stores. Contract boundary against drift. (specification)

@@ -1,6 +1,6 @@
 # Ícaro Galvão — devin-* ecosystem
 
-> Nineteen first-party, MIT-licensed `devin-*` tools, one DevKit distribution, one maintainer hub and three related artifacts (24 catalog entries). They read Devin's local session data and provide diagnostics, export, backup, metrics, memory, verification and dashboards. Zero telemetry, read-only by default. Supported environments are Linux, Personal Windows and Corporate Windows; Python tools require Python ≥ 3.10.
+> Nineteen first-party, MIT-licensed `devin-*` tools, one DevKit distribution, one maintainer hub and three related artifacts (24 catalog entries). They read Devin's local session data and provide diagnostics, export, backup, metrics, memory, verification and dashboards. Zero telemetry. Read-only by default where applicable; mutating operations are explicit, guarded and dry-run first where supported. Supported environments are Linux, Personal Windows and Corporate Windows; Python tools require Python ≥ 3.10.
 
 ## Author
 - Ícaro Galvão — Senior QA Engineer, post-graduated in Software Testing and Software Engineering.
