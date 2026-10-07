@@ -200,7 +200,7 @@ footer .cta:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,113,2
    "name": "Does any of this send telemetry or need an account?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "No. Everything is local-only, read-only by default, and MIT-licensed. Nothing phones home; there is nothing to sign up for."
+    "text": "No. Everything is local-only and MIT-licensed. Nothing phones home; there is nothing to sign up for. Tools are read-only by default where applicable; mutating operations are explicit, guarded and dry-run first where supported."
    }
   }
  ]
@@ -344,7 +344,7 @@ footer .cta:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,113,2
   <details class="q"><summary>How do I back up and restore Devin's local data?</summary><p><a href="https://github.com/Icaro0310/devin-backup">devin-backup</a> snapshots the stores with schema-version manifests, then verifies, restores and rotates them.</p></details>
   <details class="q"><summary>How do I remove secrets from exported history before sharing?</summary><p><a href="https://github.com/Icaro0310/devin-redact">devin-redact</a> understands tool-call semantics, not just plaintext patterns — redacting in place inside SQLite, with a <span class="mono">.bak</span> safety copy.</p></details>
   <details class="q"><summary>Can I run all of this on a locked-down corporate machine?</summary><p>The DevKit-installable core can. Corporate Windows is an explicit local-only environment: no VM, no tunnel, no model server, no Slack, no Obsidian. The registry marks <a href="https://github.com/Icaro0310/qwenpaw-suite">qwenpaw-suite</a> unsupported there, and <a href="https://github.com/Icaro0310/devin-bridge">devin-bridge</a> needs Node.js ≥ 20 because it is an ACP client for the Devin CLI itself. Heavy offload, wake-while-idle and remote reach remain outside the corporate guarantee.</p></details>
-  <details class="q"><summary>Does any of this send telemetry or need an account?</summary><p>No. Everything is local-only, read-only by default, and MIT-licensed. Nothing phones home; there is nothing to sign up for.</p></details>
+  <details class="q"><summary>Does any of this send telemetry or need an account?</summary><p>No. Everything is local-only and MIT-licensed. Nothing phones home; there is nothing to sign up for. Tools are read-only by default where applicable; mutating operations are explicit, guarded and dry-run first where supported.</p></details>
 </div>
 
 <footer>
