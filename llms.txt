@@ -24,6 +24,8 @@
 
 ## Distribution
 - devin-devkit: registry-backed installer for QA, evaluation, security, memory, operations and full profiles; Python CLIs use isolated uv environments, and source-only devin-office is marked manual. It supports `--environment linux`, `--environment personal-windows` and `--environment corporate-windows`: https://github.com/Icaro0310/devin-devkit
+- homebrew-tap: Homebrew formulas for the public devin-* CLIs on Linux and macOS, `brew install Icaro0310/tap/<tool>`; content written by release automation, consumed read-only: https://github.com/Icaro0310/homebrew-tap
+- scoop-bucket: Scoop manifests for the public devin-* CLIs on Windows including corporate user-level installs, `scoop install Icaro0310/<tool>`; content written by release automation, consumed read-only: https://github.com/Icaro0310/scoop-bucket
 
 ## Maintainer hub
 - devin-powerups: registry, project template, catalog and DevKit manifest tools.
@@ -38,7 +40,7 @@
 - Runtime model: Linux and Personal Windows are extended runtimes (local plus optional delegation); Corporate Windows is local-only and must be selected explicitly.
 - DevKit profile install (GitHub source archive; not yet on PyPI): `uv tool install "https://github.com/Icaro0310/devin-devkit/archive/main.tar.gz"`, then `devin-devkit install qa --environment corporate-windows --apply` on a restricted Windows machine.
 - `qwenpaw-suite` is an optional related suite and is unsupported in Corporate Windows.
-- Individual CLI example: `pipx install "devin-doctor @ git+https://github.com/Icaro0310/devin-doctor.git"` (Python ≥ 3.10, Windows + Linux).
+- Individual CLI example: `uv tool install devin-doctor` from PyPI (Python ≥ 3.10, Windows + Linux); `pipx install devin-doctor` works as an alternative.
 - Data lives under ~/.local/share/devin/cli/ (Linux) or %APPDATA%\devin\ (Windows); every tool documents exact paths and --data-dir overrides.
 - License: MIT. Not affiliated with Cognition AI.
 
