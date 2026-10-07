@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>devin-office — live demo</title>
-<meta name="description" content="Live dashboard of Devin sessions, subagents and tool activity rendered as an animated SVG circuit board.">
-<meta property="og:title" content="devin-office — live Devin session dashboard">
-<meta property="og:description" content="Active Devin sessions, subagents and tools as an animated SVG circuit board.">
+<title>devin-office — demo (synthetic data)</title>
+<meta name="description" content="Local session dashboard. Live view when a Devin session source is available; demo mode uses synthetic data.">
+<meta property="og:title" content="devin-office — session dashboard demo">
+<meta property="og:description" content="Devin sessions, subagents and tools as an animated SVG circuit board. Demo with synthetic data.">
 <meta property="og:image" content="https://icaro0310.github.io/assets/office-demo.gif">
 <meta name="twitter:card" content="summary_large_image">
 <style>
@@ -51,7 +51,7 @@
 </head>
 <body>
 <header>
-  <div><h1>devin-office</h1><div class="sub">live session board</div></div>
+  <div><h1>devin-office</h1><div class="sub">session board · demo, synthetic data</div></div>
   <div id="stat">connecting…</div>
 </header>
 <svg id="board"></svg>
@@ -74,7 +74,7 @@ const _f=window.fetch;
 window.fetch=u=>u.includes("/api/state")?Promise.resolve({ok:true,json:()=>Promise.resolve(DEMO_STATE)})
  :u.includes("/api/eco")?Promise.resolve({ok:true,json:()=>Promise.resolve({eco:DEMO_ECO})})
  :_f(u);
-document.title="devin-office — live demo";
+document.title="devin-office — demo (synthetic data)";
 </script>
 <script>
 const svg=document.getElementById("board"), NS="http://www.w3.org/2000/svg";

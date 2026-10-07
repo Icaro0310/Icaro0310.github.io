@@ -21,7 +21,7 @@ AI coding agents (Devin CLI) store rich session data locally — transcripts, to
 - devin-bridge: policy-gated ACP client — allow/deny/ask rules, enforcement in code. (control)
 - devin-janitor: session lifecycle — export-then-delete, tiered, dry-run first. (automation)
 - devin-orchestrator: background-worker fan-out — deterministic planner, caps, no nesting. (orchestration)
-- devin-office: live dashboard — sessions/subagents/tools as animated SVG circuit board. (dashboard)
+- devin-office: local session dashboard, sessions/subagents/tools as animated SVG circuit board. Live view when a Devin session source is available; demo mode uses synthetic data. (dashboard)
 - devin-dream: synthetic Devin sessions/fleets with known verdicts — fixtures for graders, demos, screenshots. (fixtures)
 - devin-skill-catalog: skill/rule lifecycle — scan, lint, G1–G3 evidence gates, quarantine → active, bundles. (governance)
 - devin-switch: swap Devin config profiles (hooks, MCP, models) — verified snapshot, dry-run, rollback. (profiles)
