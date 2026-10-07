@@ -1,6 +1,6 @@
 # devin-* ecosystem — full reference for LLMs
 
-See llms.txt for the index. This file is the complete catalog: 19 first-party `devin-*` tools, one `devin-devkit` distribution, one `devin-powerups` maintainer hub, and three related artifacts (24 entries).
+See llms.txt for the index. This file is the complete catalog: the first-party `devin-*` tools, the `devin-devkit` distribution, the `devin-powerups` maintainer hub, and related artifacts.
 
 ## What problem it solves
 AI coding agents (Devin CLI) store rich session data locally — transcripts, tool-call states and context signals — but offer no way to inspect it. The devin-* tools are the instrumentation layer. They read those local SQLite stores; read-only by default where applicable, and mutating operations are explicit, guarded and dry-run first where supported.
