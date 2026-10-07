@@ -17,7 +17,7 @@
 
 ## Full catalog — first-party tools
 - Foundation: devin-internals-spec
-- QA and evaluation: devin-doctor, devin-qa-pack, devin-evals, devin-metrics, devin-dream
+- QA and evaluation: devin-doctor, devin-qa-pack, devin-evals, devin-metrics
 - History and operations: devin-history, devin-backup, devin-pm, devin-janitor, devin-orchestrator, devin-office
 - Safety and governance: devin-redact, devin-bridge, devin-switch, devin-skill-catalog
 - Memory and recall: devin-memory, devin-graph, devin-search
