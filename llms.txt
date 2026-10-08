@@ -7,13 +7,12 @@
 - GitHub: https://github.com/Icaro0310
 - Site: https://icaro0310.github.io/
 
-## Start with a job
-- devin-qa-pack — flagship audit: verify agent claims vs. tool-call evidence (PASS/PARTIAL/UNVERIFIED): https://github.com/Icaro0310/devin-qa-pack
-- devin-doctor — diagnose the local Devin install and stores before auditing: https://github.com/Icaro0310/devin-doctor
-- devin-office — local session dashboard as animated circuit board plus a session kanban (RUNNING/BLOCKED/REVIEW/CLOSED); live view when a Devin session source is available, demo mode uses synthetic data: https://github.com/Icaro0310/devin-office + demos https://icaro0310.github.io/demos/devin-office.html and https://icaro0310.github.io/demos/devin-office-kanban.html
-- devin-internals-spec — Devin's store internals documented: https://github.com/Icaro0310/devin-internals-spec
-- devin-evals — replay recorded sessions against deterministic rubric graders: https://github.com/Icaro0310/devin-evals
-- awesome-devin — curated hub for the whole ecosystem: https://github.com/Icaro0310/awesome-devin
+## What do you want to do?
+- Understand (observe sessions, activity, behavior): devin-doctor, devin-graph, devin-history, devin-internals-spec, devin-office, devin-search
+- Verify (validate claims, actions, outcomes): devin-evals, devin-metrics, devin-qa-pack, poordjaevin
+- Control (constrain execution, data, lifecycle): devin-backup, devin-bridge, devin-janitor, devin-memory, devin-orchestrator, devin-redact, devin-switch
+- Build (integrations and tooling): devin-devkit, devin-powerups, devin-skill-catalog, homebrew-tap, scoop-bucket
+- Full catalog with browse by audience/interface: https://github.com/Icaro0310/awesome-devin
 
 ## Full catalog — first-party tools
 - Foundation: devin-internals-spec
