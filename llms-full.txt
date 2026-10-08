@@ -38,6 +38,15 @@ AI coding agents (Devin CLI) store rich session data locally — transcripts, to
 ## Maintainer hub
 - devin-powerups: registry source of truth, profiles, catalog exporters, project template and maintainer utilities.
 
+## Paths by audience (curated, ordered; source: registry.journeys)
+- AI engineers: devin-bridge → devin-orchestrator → devin-memory
+- Developers: devin-devkit → devin-internals-spec → devin-powerups
+- End users: awesome-devin → devin-devkit → devin-doctor
+- Maintainers: devin-powerups → devin-pm → devin-internals-spec
+- Operations: devin-doctor → devin-backup → devin-janitor → devin-metrics
+- QA engineers: devin-qa-pack → devin-evals → poordjaevin
+- Security engineers: devin-backup → devin-redact → devin-janitor
+
 ## Related artifacts
 - poordjaevin (Djævin): related tool — typed decision layer, Choice/Score/Noul answers with calibrated confidence; uses Devin's own model via ACP or a fully offline NLI fallback; `poordjaevin serve` exposes it as an MCP server. (judgment)
 - qwenpaw-suite: related suite — OPTIONAL add-on, Ollama↔OpenAI bridge. Not required for anything else.

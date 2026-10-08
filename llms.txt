@@ -15,6 +15,15 @@
 - Related: devin-pm (project reporting)
 - Full catalog with browse by audience/interface: https://github.com/Icaro0310/awesome-devin
 
+## Paths by audience (curated, ordered)
+- AI engineers: devin-bridge → devin-orchestrator → devin-memory
+- Developers: devin-devkit → devin-internals-spec → devin-powerups
+- End users: awesome-devin → devin-devkit → devin-doctor
+- Maintainers: devin-powerups → devin-pm → devin-internals-spec
+- Operations: devin-doctor → devin-backup → devin-janitor → devin-metrics
+- QA engineers: devin-qa-pack → devin-evals → poordjaevin
+- Security engineers: devin-backup → devin-redact → devin-janitor
+
 ## Full catalog — first-party tools
 - Foundation: devin-internals-spec
 - QA and evaluation: devin-doctor, devin-qa-pack, devin-evals, devin-metrics
