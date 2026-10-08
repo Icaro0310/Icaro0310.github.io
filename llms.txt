@@ -11,7 +11,7 @@
 - Understand (observe sessions, activity, behavior): devin-doctor, devin-graph, devin-history, devin-internals-spec, devin-office, devin-search
 - Verify (validate claims, actions, outcomes): devin-evals, devin-metrics, devin-qa-pack, poordjaevin
 - Control (constrain execution, data, lifecycle): devin-backup, devin-bridge, devin-janitor, devin-memory, devin-orchestrator, devin-redact, devin-switch
-- Build (integrations and tooling): devin-devkit, devin-powerups, devin-skill-catalog, homebrew-tap, scoop-bucket
+- Build (integrations and tooling): devin-devkit, devin-powerups, devin-skill-catalog
 - Related: devin-pm (project reporting)
 - Full catalog with browse by audience/interface: https://github.com/Icaro0310/awesome-devin
 
@@ -33,8 +33,6 @@
 
 ## Distribution
 - devin-devkit: registry-backed installer for QA, evaluation, security, memory, operations and full profiles; Python CLIs use isolated uv environments, and source-only devin-office is marked manual. It supports `--environment linux`, `--environment personal-windows` and `--environment corporate-windows`: https://github.com/Icaro0310/devin-devkit
-- homebrew-tap: Homebrew formulas for the public devin-* CLIs on Linux and macOS, `brew install Icaro0310/tap/<tool>`; content written by release automation, consumed read-only: https://github.com/Icaro0310/homebrew-tap
-- scoop-bucket: Scoop manifests for the public devin-* CLIs on Windows including corporate user-level installs, `scoop install Icaro0310/<tool>`; content written by release automation, consumed read-only: https://github.com/Icaro0310/scoop-bucket
 
 ## Maintainer hub
 - devin-powerups: registry, project template, catalog and DevKit manifest tools.

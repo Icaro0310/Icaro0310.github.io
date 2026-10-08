@@ -32,8 +32,6 @@ AI coding agents (Devin CLI) store rich session data locally — transcripts, to
 
 ## Distribution
 - devin-devkit: profile-based installer for Linux, Personal Windows and Corporate Windows; reads the registry manifest and installs isolated CLIs with uv, plus the optional Node bridge with npm. `devin-office` remains a manual source-only service. https://github.com/Icaro0310/devin-devkit
-- homebrew-tap: Homebrew formulas for the public devin-* CLIs on Linux and macOS, `brew install Icaro0310/tap/<tool>`; written by release automation, consumed read-only. https://github.com/Icaro0310/homebrew-tap
-- scoop-bucket: Scoop manifests for the public devin-* CLIs on Windows including corporate user-level installs, `scoop install Icaro0310/<tool>`; written by release automation, consumed read-only. https://github.com/Icaro0310/scoop-bucket
 
 ## Maintainer hub
 - devin-powerups: registry source of truth, profiles, catalog exporters, project template and maintainer utilities.
