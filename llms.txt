@@ -11,9 +11,9 @@
 ## What do you want to do?
 
 - Understand (observe sessions, activity and behavior): devin-explore, devin-graph, devin-history, devin-internals-spec, devin-pm, devin-search
-- Verify (validate claims, actions and outcomes): devin-assure, devin-evals, devin-judge, devin-metrics
-- Control (constrain execution, data and lifecycle): devin-backup, devin-brain, devin-control, devin-janitor, devin-office, devin-orchestrator, devin-state, devin-switch
-- Build (create integrations and tooling): devin-devkit, devin-powerups, devin-skill-catalog
+- Verify (validate claims, actions and outcomes): devin-assure, devin-evals, devin-metrics
+- Control (constrain execution, data and lifecycle): devin-backup, devin-control, devin-janitor, devin-judge, devin-office, devin-orchestrator, devin-state, devin-switch
+- Build (create integrations and tooling): devin-brain, devin-devkit, devin-powerups, devin-skill-catalog
 - Navigate (find your way across the ecosystem): awesome-devin
 - Related (adjacent projects and artifacts): qwenpaw-suite
 
