@@ -10,12 +10,12 @@
 ## What do you want to do?
 - Understand (observe sessions, activity, behavior): devin-explore, devin-graph, devin-history, devin-internals-spec, devin-pm, devin-search
 - Verify (validate claims, actions, outcomes): devin-evals, devin-metrics, devin-assure, devin-judge
-- Control (constrain execution, data, lifecycle): devin-backup, devin-bridge, devin-janitor, devin-brain, devin-orchestrator, devin-state, devin-switch
+- Control (constrain execution, data, lifecycle): devin-backup, devin-control, devin-janitor, devin-brain, devin-orchestrator, devin-state, devin-switch
 - Build (integrations and tooling): devin-devkit, devin-powerups, devin-skill-catalog
 - Full catalog with browse by audience/interface: https://github.com/Icaro0310/awesome-devin
 
 ## Paths by audience (curated, ordered)
-- AI engineers: devin-bridge → devin-orchestrator → devin-brain
+- AI engineers: devin-control → devin-orchestrator → devin-brain
 - Developers: devin-devkit → devin-internals-spec → devin-powerups
 - End users: awesome-devin → devin-devkit → devin-explore
 - Maintainers: devin-powerups → devin-pm → devin-internals-spec
@@ -27,7 +27,7 @@
 - Foundation: devin-internals-spec
 - QA and evaluation: devin-explore, devin-assure, devin-evals, devin-metrics
 - History and operations: devin-history, devin-backup, devin-pm, devin-janitor, devin-orchestrator, devin-office
-- Safety and governance: devin-state, devin-bridge, devin-switch, devin-skill-catalog
+- Safety and governance: devin-state, devin-control, devin-switch, devin-skill-catalog
 - Memory and recall: devin-brain, devin-graph, devin-search
 
 ## Distribution

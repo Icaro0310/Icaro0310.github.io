@@ -18,7 +18,7 @@ AI coding agents (Devin CLI) store rich session data locally — transcripts, to
 - devin-qa-pack: claims vs. reality — PASS/PARTIAL/UNVERIFIED on tests, commits, pushes. (verification)
 - devin-evals: deterministic replay-evaluation with rubric graders; `dream` subgroup generates synthetic sessions with known verdicts (absorbed devin-dream). (evaluation)
 - devin-redact: secret/PII redaction aware of tool-call semantics, in-place in SQLite; released from the devin-state monorepo. (security)
-- devin-bridge: policy-gated ACP client — allow/deny/ask rules, enforcement in code. (control)
+- devin-control: policy-gated ACP client — allow/deny/ask rules, enforcement in code. (control)
 - devin-janitor: session lifecycle — export-then-delete, tiered, dry-run first; released from the devin-state monorepo. (automation)
 - devin-orchestrator: background-worker fan-out — deterministic planner, caps, no nesting. (orchestration)
 - devin-office: local session dashboard, sessions/subagents/tools as animated SVG circuit board. Live view when a Devin session source is available; demo mode uses synthetic data. (dashboard)
@@ -37,7 +37,7 @@ AI coding agents (Devin CLI) store rich session data locally — transcripts, to
 - devin-powerups: registry source of truth, profiles, catalog exporters, project template and maintainer utilities.
 
 ## Paths by audience (curated, ordered; source: registry.journeys)
-- AI engineers: devin-bridge → devin-orchestrator → devin-brain
+- AI engineers: devin-control → devin-orchestrator → devin-brain
 - Developers: devin-devkit → devin-internals-spec → devin-powerups
 - End users: awesome-devin → devin-devkit → devin-explore
 - Maintainers: devin-powerups → devin-pm → devin-internals-spec
