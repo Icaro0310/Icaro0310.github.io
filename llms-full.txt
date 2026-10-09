@@ -39,11 +39,11 @@ AI coding agents (Devin CLI) store rich session data locally — transcripts, to
 ## Paths by audience (curated, ordered; source: registry.journeys)
 - AI engineers: devin-bridge → devin-orchestrator → devin-brain
 - Developers: devin-devkit → devin-internals-spec → devin-powerups
-- End users: awesome-devin → devin-devkit → devin-doctor
+- End users: awesome-devin → devin-devkit → devin-explore
 - Maintainers: devin-powerups → devin-pm → devin-internals-spec
-- Operations: devin-doctor → devin-backup → devin-janitor → devin-metrics
-- QA engineers: devin-qa-pack → devin-evals → devin-judge
-- Security engineers: devin-backup → devin-redact → devin-janitor
+- Operations: devin-explore → devin-backup → devin-janitor → devin-metrics
+- QA engineers: devin-assure → devin-evals → devin-judge
+- Security engineers: devin-backup → devin-state → devin-janitor
 
 ## Related artifacts
 - devin-judge (Djævin): typed decision layer, Choice/Score/Noul answers with calibrated confidence; uses Devin's own model via ACP or a fully offline NLI fallback; `poordjaevin serve` exposes it as an MCP server. (judgment)
