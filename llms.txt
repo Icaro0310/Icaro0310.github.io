@@ -8,11 +8,10 @@
 - Site: https://icaro0310.github.io/
 
 ## What do you want to do?
-- Understand (observe sessions, activity, behavior): devin-explore, devin-graph, devin-history, devin-internals-spec, devin-search
+- Understand (observe sessions, activity, behavior): devin-explore, devin-graph, devin-history, devin-internals-spec, devin-pm, devin-search
 - Verify (validate claims, actions, outcomes): devin-evals, devin-metrics, devin-assure, devin-judge
 - Control (constrain execution, data, lifecycle): devin-backup, devin-bridge, devin-janitor, devin-brain, devin-orchestrator, devin-state, devin-switch
 - Build (integrations and tooling): devin-devkit, devin-powerups, devin-skill-catalog
-- Related: devin-pm (project reporting)
 - Full catalog with browse by audience/interface: https://github.com/Icaro0310/awesome-devin
 
 ## Paths by audience (curated, ordered)
