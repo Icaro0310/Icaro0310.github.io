@@ -10,13 +10,13 @@
 ## What do you want to do?
 - Understand (observe sessions, activity, behavior): devin-doctor, devin-graph, devin-history, devin-internals-spec, devin-office, devin-search
 - Verify (validate claims, actions, outcomes): devin-evals, devin-metrics, devin-qa-pack, poordjaevin
-- Control (constrain execution, data, lifecycle): devin-backup, devin-bridge, devin-janitor, devin-memory, devin-orchestrator, devin-redact, devin-switch
+- Control (constrain execution, data, lifecycle): devin-backup, devin-bridge, devin-janitor, devin-brain, devin-orchestrator, devin-redact, devin-switch
 - Build (integrations and tooling): devin-devkit, devin-powerups, devin-skill-catalog
 - Related: devin-pm (project reporting)
 - Full catalog with browse by audience/interface: https://github.com/Icaro0310/awesome-devin
 
 ## Paths by audience (curated, ordered)
-- AI engineers: devin-bridge → devin-orchestrator → devin-memory
+- AI engineers: devin-bridge → devin-orchestrator → devin-brain
 - Developers: devin-devkit → devin-internals-spec → devin-powerups
 - End users: awesome-devin → devin-devkit → devin-doctor
 - Maintainers: devin-powerups → devin-pm → devin-internals-spec
@@ -29,7 +29,7 @@
 - QA and evaluation: devin-doctor, devin-qa-pack, devin-evals, devin-metrics
 - History and operations: devin-history, devin-backup, devin-pm, devin-janitor, devin-orchestrator, devin-office
 - Safety and governance: devin-redact, devin-bridge, devin-switch, devin-skill-catalog
-- Memory and recall: devin-memory, devin-graph, devin-search
+- Memory and recall: devin-brain, devin-graph, devin-search
 
 ## Distribution
 - devin-devkit: registry-backed installer for QA, evaluation, security, memory, operations and full profiles; Python CLIs use isolated uv environments, and source-only devin-office is marked manual. It supports `--environment linux`, `--environment personal-windows` and `--environment corporate-windows`: https://github.com/Icaro0310/devin-devkit

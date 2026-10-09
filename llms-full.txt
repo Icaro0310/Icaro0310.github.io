@@ -11,7 +11,7 @@ AI coding agents (Devin CLI) store rich session data locally — transcripts, to
 - devin-history: sessions → Markdown/JSON/CSV, Obsidian-ready notes. (export)
 - devin-search: FTS5 full-text search across all sessions. (search)
 - devin-graph: knowledge graph sessions↔projects↔files↔tools. (graph)
-- devin-memory: anti-poisoning memory store — provenance, versioning, quarantine. (memory)
+- devin-brain: anti-poisoning memory store — provenance, versioning, quarantine. (memory)
 - devin-backup: snapshot/verify/restore/rotate with schema-version manifests. (backup)
 - devin-metrics: activity, context size and token peaks per project/model/day; Devin does not persist cost fields. (observability)
 - devin-pm: project manager over sessions — rollups, milestones, status. (reporting)
@@ -37,7 +37,7 @@ AI coding agents (Devin CLI) store rich session data locally — transcripts, to
 - devin-powerups: registry source of truth, profiles, catalog exporters, project template and maintainer utilities.
 
 ## Paths by audience (curated, ordered; source: registry.journeys)
-- AI engineers: devin-bridge → devin-orchestrator → devin-memory
+- AI engineers: devin-bridge → devin-orchestrator → devin-brain
 - Developers: devin-devkit → devin-internals-spec → devin-powerups
 - End users: awesome-devin → devin-devkit → devin-doctor
 - Maintainers: devin-powerups → devin-pm → devin-internals-spec
