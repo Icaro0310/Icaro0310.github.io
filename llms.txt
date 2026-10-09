@@ -9,7 +9,7 @@
 
 ## What do you want to do?
 - Understand (observe sessions, activity, behavior): devin-doctor, devin-graph, devin-history, devin-internals-spec, devin-office, devin-search
-- Verify (validate claims, actions, outcomes): devin-evals, devin-metrics, devin-qa-pack, poordjaevin
+- Verify (validate claims, actions, outcomes): devin-evals, devin-metrics, devin-qa-pack, devin-judge
 - Control (constrain execution, data, lifecycle): devin-backup, devin-bridge, devin-janitor, devin-brain, devin-orchestrator, devin-redact, devin-switch
 - Build (integrations and tooling): devin-devkit, devin-powerups, devin-skill-catalog
 - Related: devin-pm (project reporting)
@@ -21,7 +21,7 @@
 - End users: awesome-devin → devin-devkit → devin-doctor
 - Maintainers: devin-powerups → devin-pm → devin-internals-spec
 - Operations: devin-doctor → devin-backup → devin-janitor → devin-metrics
-- QA engineers: devin-qa-pack → devin-evals → poordjaevin
+- QA engineers: devin-qa-pack → devin-evals → devin-judge
 - Security engineers: devin-backup → devin-redact → devin-janitor
 
 ## Full catalog — first-party tools
@@ -38,7 +38,7 @@
 - devin-powerups: registry, project template, catalog and DevKit manifest tools.
 
 ## Related artifacts
-- poordjaevin: related tool — calibrated decision layer
+- devin-judge: calibrated decision layer (package `poordjaevin`)
 - qwenpaw-suite: related suite — optional self-hosted model add-on
 - awesome-devin: related resource — curated resources
 
