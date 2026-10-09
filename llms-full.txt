@@ -12,7 +12,7 @@ AI coding agents (Devin CLI) store rich session data locally — transcripts, to
 - devin-backup: Safe snapshot/verify/restore/rotate of Devin stores with schema-version manifests. (module)
 - devin-brain: Anti-poisoning memory store: provenance, versioning, quarantine gate, and session-learning utilities. (module)
 - devin-control: Control how Devin runs: a policy-gated ACP bridge (Node.js, isolated sessions per repo with allow/deny/ask rules), a deterministic background-worker fan-out planner (devin-fanout), config profile switching with snapshot and rollback, and a live activity board (office, source-only). (module)
-- devin-evals: Deterministic eval harness: replay recorded sessions against rubric graders; the `dream` subgroup generates synthetic sessions with known verdicts (D01-D09, absorbs devin-dream). (module)
+- devin-evals: Deterministic eval harness: replay recorded sessions against rubric graders; the `dream` subgroup generates synthetic sessions with known verdicts (D01-D10, absorbs devin-dream). (module)
 - devin-explore: Understand Devin sessions: diagnose the local installation (stores, schema, locks, config, disk — with fix suggestions), export and audit session history, run FTS5 full-text search, query a knowledge graph of sessions/projects/files/tools, and roll sessions into per-repo milestones and status reports. All local, no telemetry. (module)
 - devin-graph: Knowledge graph: sessions, projects, files touched, tools used — queryable edges. (module)
 - devin-history: Export and audit Devin session history — markdown notes, JSON, CSV, Obsidian-ready. (module)
