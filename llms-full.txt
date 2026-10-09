@@ -42,11 +42,11 @@ AI coding agents (Devin CLI) store rich session data locally — transcripts, to
 - End users: awesome-devin → devin-devkit → devin-doctor
 - Maintainers: devin-powerups → devin-pm → devin-internals-spec
 - Operations: devin-doctor → devin-backup → devin-janitor → devin-metrics
-- QA engineers: devin-qa-pack → devin-evals → poordjaevin
+- QA engineers: devin-qa-pack → devin-evals → devin-judge
 - Security engineers: devin-backup → devin-redact → devin-janitor
 
 ## Related artifacts
-- poordjaevin (Djævin): related tool — typed decision layer, Choice/Score/Noul answers with calibrated confidence; uses Devin's own model via ACP or a fully offline NLI fallback; `poordjaevin serve` exposes it as an MCP server. (judgment)
+- devin-judge (Djævin): typed decision layer, Choice/Score/Noul answers with calibrated confidence; uses Devin's own model via ACP or a fully offline NLI fallback; `poordjaevin serve` exposes it as an MCP server. (judgment)
 - qwenpaw-suite: related suite — OPTIONAL add-on, Ollama↔OpenAI bridge. Not required for anything else.
 - awesome-devin: related resource — curated list of the ecosystem + related resources.
 
