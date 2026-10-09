@@ -214,15 +214,16 @@ footer .cta:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,113,2
 
 <header>
   <div class="eyebrow">Developer tooling · open source</div>
-  <h1><a href="https://www.linkedin.com/in/ícaro-galvão-do-nascimento-663601280/">Ícaro Galvão</a></h1>
-  <p class="roleline">Senior QA Engineer · AI Agents</p>
-  <p class="lede">I build <b style="color:var(--ink)">devin-<span style="color:var(--acc)">*</span></b> — first-party local-first
-  tools for Devin, distributed through a profile-based DevKit. The registry,
-  maintainer hub and related artifacts are cataloged separately. No cloud, no telemetry, nothing to sign up for.</p>
+  <h1>Assurance infrastructure for AI coding agents</h1>
+  <p class="roleline">Ícaro Galvão · Senior QA Engineer — local-first, zero telemetry, nothing to sign up for</p>
+  <p class="lede"><b style="color:var(--ink)">devin-<span style="color:var(--acc)">*</span></b> — seven products, four jobs
+  (Understand · Verify · Control · Build), one foundation. First-party local-first tooling for
+  Devin, distributed through a profile-based DevKit. The registry, maintainer hub and related
+  artifacts are cataloged separately.</p>
   <div class="links">
+    <a class="pill" href="#want">Start here</a>
     <a class="pill" href="https://github.com/Icaro0310">GitHub</a>
     <a class="pill" href="https://www.linkedin.com/in/ícaro-galvão-do-nascimento-663601280/">LinkedIn</a>
-    <span class="pill">Tools · DevKit</span>
     <span class="pill">Linux · Personal Windows · Corporate Windows</span>
     <span class="pill">MIT</span>
   </div>
@@ -257,7 +258,7 @@ footer .cta:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,113,2
   core needs no VM, tunnel or external service.</p>
 </div>
 
-<h2>What do you want to do?</h2>
+<h2 id="want">What do you want to do?</h2>
 <div class="grid">
   <div class="card"><h3>Understand</h3><p>Observe sessions, activity and behavior.</p><p><a href="https://github.com/Icaro0310/devin-explore"><code>devin-explore</code></a> · <a href="https://github.com/Icaro0310/devin-explore/tree/main/packages/graph"><code>devin-graph</code></a> · <a href="https://github.com/Icaro0310/devin-explore/tree/main/packages/history"><code>devin-history</code></a> · <a href="https://github.com/Icaro0310/devin-internals-spec"><code>devin-internals-spec</code></a> · <a href="https://github.com/Icaro0310/devin-explore/tree/main/packages/search"><code>devin-search</code></a></p></div>
   <div class="card"><h3>Verify</h3><p>Validate claims, actions and outcomes.</p><p><a href="https://github.com/Icaro0310/devin-assure/tree/main/packages/evals"><code>devin-evals</code></a> · <a href="https://github.com/Icaro0310/devin-assure/tree/main/packages/metrics"><code>devin-metrics</code></a> · <a href="https://github.com/Icaro0310/devin-assure"><code>devin-assure</code></a> · <a href="https://github.com/Icaro0310/devin-judge"><code>devin-judge</code></a></p></div>
@@ -342,26 +343,20 @@ ecosystem, generated from the same registry as <a href="https://github.com/Icaro
   <a class="card" href="https://github.com/Icaro0310/devin-powerups"><h3><span class="mono">devin-powerups</span></h3><p>Registry source of truth, profile/catalog exporters, project template and maintainer utilities.</p><span class="tag">maintainer hub · ★1</span></a>
 </div>
 
-<h2>Related</h2>
+<h2>Products</h2>
 <div class="grid">
-  <a class="card" href="https://github.com/Icaro0310/devin-judge"><h3><span class="mono">devin-judge</span></h3><p>Calibrated decision layer using Devin's own model through ACP, with an offline NLI fallback.</p><span class="tag">tool · decision layer · ★6 · v0.1.1</span></a>
-  <a class="card" href="https://github.com/Icaro0310/qwenpaw-suite"><h3><span class="mono">qwenpaw-suite</span></h3><p>Optional add-on — Ollama ↔ OpenAI bridge for self-hosted model operators.</p><span class="tag">related suite · optional · ★1</span></a>
-  <a class="card" href="https://github.com/Icaro0310/awesome-devin"><h3><span class="mono">awesome-devin</span></h3><p>Curated list of Devin resources and the devin-* open-source tooling ecosystem.</p><span class="tag">related resource · curated list · ★1</span></a>
-  <a class="card" href="https://github.com/Icaro0310/devin-control"><h3><span class="mono">devin-bridge</span></h3><p>Policy-gated ACP client for the Devin CLI: isolated sessions with allow/deny/ask rules</p><span class="tag">new · ★1 · v0.1.0</span></a>
-  <a class="card" href="https://github.com/Icaro0310/devin-dream"><h3><span class="mono">devin-dream</span></h3><p>Synthetic Devin sessions with known verdicts — regression and adversarial test data for the devin-* catalog</p><span class="tag">new · ★1</span></a>
-  <a class="card" href="https://github.com/Icaro0310/devin-backup"><h3><span class="mono">devin-backup</span></h3><p>Safe snapshot, verify, restore and rotate of Devin stores with schema-version manifests</p><span class="tag">new · ★1</span></a>
-  <a class="card" href="https://github.com/Icaro0310/devin-evals"><h3><span class="mono">devin-evals</span></h3><p>Deterministic eval harness: replay recorded Devin sessions against rubric graders</p><span class="tag">new · ★1</span></a>
-  <a class="card" href="https://github.com/Icaro0310/devin-graph"><h3><span class="mono">devin-graph</span></h3><p>Queryable knowledge graph over Devin sessions: projects, files touched, tools used</p><span class="tag">new · ★1</span></a>
-  <a class="card" href="https://github.com/Icaro0310/devin-history"><h3><span class="mono">devin-history</span></h3><p>Export and audit Devin session history to markdown notes, JSON, CSV - Obsidian-ready</p><span class="tag">new · ★1</span></a>
-  <a class="card" href="https://github.com/Icaro0310/devin-janitor"><h3><span class="mono">devin-janitor</span></h3><p>Devin session lifecycle: export-then-delete pipeline, tiered classification, pluggable judge</p><span class="tag">new · ★1</span></a>
-  <a class="card" href="https://github.com/Icaro0310/devin-metrics"><h3><span class="mono">devin-metrics</span></h3><p>Local-only Devin session observability: activity, context size and token peaks</p><span class="tag">new · ★1</span></a>
-  <a class="card" href="https://github.com/Icaro0310/devin-office"><h3><span class="mono">devin-office</span></h3><p>Local session dashboard. Live view when a Devin session source is available; demo mode uses synthetic data.</p><span class="tag">new · ★1</span></a>
-  <a class="card" href="https://github.com/Icaro0310/devin-orchestrator"><h3><span class="mono">devin-orchestrator</span></h3><p>Background-worker fan-out policy for Devin: deterministic planner, caps, no nesting</p><span class="tag">new · ★1</span></a>
-  <a class="card" href="https://github.com/Icaro0310/devin-pm"><h3><span class="mono">devin-pm</span></h3><p>Project manager over Devin sessions: per-repo rollups, milestones, status reports</p><span class="tag">new · ★1</span></a>
-  <a class="card" href="https://github.com/Icaro0310/devin-search"><h3><span class="mono">devin-search</span></h3><p>FTS5 full-text search across all Devin sessions, role-tagged and project-filtered</p><span class="tag">new · ★1</span></a>
-  <a class="card" href="https://github.com/Icaro0310/devin-skill-catalog"><h3><span class="mono">devin-skill-catalog</span></h3><p>Inventory, lint, quarantine and promote .devin skills/rules across machines — lifecycle registry, evidence gates, portable bundles</p><span class="tag">new · ★1</span></a>
-  <a class="card" href="https://github.com/Icaro0310/devin-switch"><h3><span class="mono">devin-switch</span></h3><p>Swap between named Devin config profiles — hooks, MCP servers, models — with verified snapshots and rollback journal. Dry-run by default</p><span class="tag">new · ★1</span></a>
+  <a class="card" href="https://github.com/Icaro0310/devin-explore"><h3><span class="mono">devin-explore</span></h3><p>Understand — what happened in the agent? doctor · history · search · graph · pm.</p><span class="tag">Understand · ★4</span></a>
+  <a class="card" href="https://github.com/Icaro0310/devin-assure"><h3><span class="mono">devin-assure</span></h3><p>Verify — did the agent do what it said? qa-pack · evals · metrics.</p><span class="tag">Verify · ★1</span></a>
+  <a class="card" href="https://github.com/Icaro0310/devin-control"><h3><span class="mono">devin-control</span></h3><p>Control — execution: policy-gated ACP bridge, fan-out orchestrator, profile switch, live board. bridge · orchestrator · switch · office.</p><span class="tag">Control · ★1</span></a>
+  <a class="card" href="https://github.com/Icaro0310/devin-judge"><h3><span class="mono">devin-judge</span></h3><p>Control — judgment: calibrated yes/no/score decisions on agent runs, offline NLI fallback.</p><span class="tag">Control · ★6 · v0.1.1</span></a>
+  <a class="card" href="https://github.com/Icaro0310/devin-state"><h3><span class="mono">devin-state</span></h3><p>Control — data lifecycle: secret/PII redaction, store backup/restore, session janitor. redact · backup · janitor.</p><span class="tag">Control · ★1</span></a>
+  <a class="card" href="https://github.com/Icaro0310/devin-devkit"><h3><span class="mono">devin-devkit</span></h3><p>Build — ecosystem: profile-based installs for Linux, Personal and Corporate Windows. devkit · skill-catalog.</p><span class="tag">Build · ★1</span></a>
+  <a class="card" href="https://github.com/Icaro0310/devin-brain"><h3><span class="mono">devin-brain</span></h3><p>Build — memory: provenance, versioning and quarantine gate for what the agent retains.</p><span class="tag">Build · ★1</span></a>
 </div>
+<p class="lede">Plus <a href="https://github.com/Icaro0310/devin-internals-spec"><code>devin-internals-spec</code></a> — the Foundation: the typed contract for Devin's local stores that the packages depend on (infrastructure, not an install target) — and <a href="https://github.com/Icaro0310/devin-powerups"><code>devin-powerups</code></a>, the maintainer hub. Related: <a href="https://github.com/Icaro0310/awesome-devin"><code>awesome-devin</code></a> (discovery) and <a href="https://github.com/Icaro0310/qwenpaw-suite"><code>qwenpaw-suite</code></a> (optional model bridge).</p>
+
+
+
 
 <h2>Why devin-*?</h2>
 <div class="qa">
