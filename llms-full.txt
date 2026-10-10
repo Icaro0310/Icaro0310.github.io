@@ -45,10 +45,10 @@ AI coding agents (Devin CLI) store rich session data locally — transcripts, to
 ## Paths by audience (curated, ordered; source: registry.journeys)
 
 - AI engineers: devin-control → devin-orchestrator → devin-brain
-- Data Scientists: devin-brain → devin-explore → devin-metrics
-- DevOps engineers: devin-state → devin-control → devin-devkit
-- Developers: devin-devkit → devin-internals-spec → devin-powerups
-- Operations: devin-explore → devin-backup → devin-janitor → devin-metrics
+- Data Scientists: devin-graph → devin-search → devin-history → devin-metrics
+- DevOps engineers: devin-state → devin-bridge → devin-switch
+- Developers: devin-devkit → devin-skill-catalog → devin-internals-spec → devin-powerups
+- Local-first ops: devin-explore → devin-pm → devin-office → devin-backup → devin-janitor
 - QA engineers: devin-assure → devin-evals → devin-judge
 
 ## Related artifacts
