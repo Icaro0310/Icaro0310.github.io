@@ -61,13 +61,13 @@
 </head>
 <body>
 <header>
-  <div><h1><a href="https://github.com/Icaro0310/devin-office">devin-office</a></h1>
+  <div><h1><a href="https://github.com/Icaro0310/devin-control/tree/main/packages/office">devin-office</a></h1>
     <div class="sub">session kanban · demo, synthetic data</div></div>
   <div id="stat">connecting…</div>
 </header>
 <div id="cols"></div>
 <div id="note">demo com dados simulados · o board real lê <code>/api/state</code> do hub local ·
-  <a href="https://github.com/Icaro0310/devin-office">repo</a></div>
+  <a href="https://github.com/Icaro0310/devin-control/tree/main/packages/office">repo</a></div>
 <script>
 const $=id=>document.getElementById(id);
 const KCOLS=[["running","RUNNING"],["blocked","BLOCKED"],["review","REVIEW"],["closed","CLOSED"]];
@@ -76,7 +76,7 @@ const fmtAge=s=>{if(s<60)return s+"s";if(s<3600)return Math.floor(s/60)+"m";
   if(s<86400)return Math.floor(s/3600)+"h";return Math.floor(s/86400)+"d"};
 
 // ── feed simulado: sessões que atravessam o board ──────────────────────
-const PROJECTS=["petsaas","living-island","devin-memory","personal-agent-system",
+const PROJECTS=["petsaas","living-island","devin-brain","personal-agent-system",
   "Icaro0310.github.io","qwenpaw-suite"];
 const MODELS=["swe-2-high","swe-2","swe-1.6"];
 const TITLES=[

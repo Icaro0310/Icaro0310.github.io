@@ -63,13 +63,13 @@
 <script>
 // --- demo mode: static sample data, no backend required ---
 const DEMO_STATE={agents:[
- {name:"Devin",project:"devin-qa-pack",subagents:[{name:"explore"}]},
- {name:"Devin",project:"poordjaevin"},
+ {name:"Devin",project:"devin-assure",subagents:[{name:"explore"}]},
+ {name:"Devin",project:"devin-judge"},
  {name:"Devin",project:"devin-evals",subagents:[{name:"index"}]}
 ],services:{hub:"up",acp:"up",exporter:"up"}};
 const DEMO_ECO={demo:{probes:{"devin-cli":200,"sessions.db":200},
  units:{"heartbeat.timer":"active","export.timer":"active"},
- tools:{"devin-doctor":true,"devin-backup":true,"devin-history":true,"poordjaevin":true}}};
+ tools:{"devin-explore":true,"devin-backup":true,"devin-history":true,"devin-judge":true}}};
 const _f=window.fetch;
 window.fetch=u=>u.includes("/api/state")?Promise.resolve({ok:true,json:()=>Promise.resolve(DEMO_STATE)})
  :u.includes("/api/eco")?Promise.resolve({ok:true,json:()=>Promise.resolve({eco:DEMO_ECO})})
