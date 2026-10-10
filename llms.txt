@@ -21,7 +21,7 @@
 
 - AI engineers: devin-control → devin-orchestrator → devin-brain
 - Data Scientists: devin-graph → devin-search → devin-history → devin-metrics
-- DevOps engineers: devin-state → devin-control → devin-switch
+- DevOps engineers: devin-state → devin-bridge → devin-switch
 - Developers: devin-devkit → devin-skill-catalog → devin-internals-spec → devin-powerups
 - Local-first ops: devin-explore → devin-pm → devin-office → devin-backup → devin-janitor
 - QA engineers: devin-assure → devin-evals → devin-judge
