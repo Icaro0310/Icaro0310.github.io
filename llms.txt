@@ -54,7 +54,10 @@
 - Core DevKit-installable tools are LOCAL-FIRST: no VM, tunnel, model server, Slack or Obsidian required.
 - Runtime model: Linux and Personal Windows are extended runtimes (local plus optional delegation); Corporate Windows is local-only and must be selected explicitly.
 - DevKit profile install (GitHub source; not yet on PyPI): `uv tool install "git+https://github.com/Icaro0310/devin-devkit.git#subdirectory=packages/devkit"`, then `devin-devkit install qa --environment corporate-windows --apply` on a restricted Windows machine.
-- `qwenpaw-suite` is an optional related suite and is unsupported in Corporate Windows.
+- `qwenpaw-suite` is an optional related suite and is unsupported in Corporate Windows; on Linux its bridge launches via `bridge/start-all.sh` or an optional `systemd --user` unit.
+- `devin-janitor reap` kills only orphaned processes attributed to dead Devin sessions (PID+starttime attribution, grace window, sustained CPU, append-only would_kill ledger); dry-run by default, Linux only.
+- `devin-judge` gate accepts domain-specific checks via `--checks-file <checks.json>` or `--checks-preset merge`.
+- `devin-backup create --remote <dest>` re-verifies a fresh snapshot before offloading it to an ssh/rsync or mounted target; `restore --smoke` runs a post-restore integrity pass.
 - Individual CLI example: `uv tool install devin-doctor` from PyPI (Python ≥ 3.10, Windows + Linux); `pipx install devin-doctor` works as an alternative.
 - Data lives under ~/.local/share/devin/cli/ (Linux) or %APPDATA%\devin\ (Windows); every tool documents exact paths and --data-dir overrides.
 - License: MIT. Not affiliated with Cognition AI.
