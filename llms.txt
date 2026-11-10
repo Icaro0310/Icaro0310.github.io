@@ -56,6 +56,7 @@
 - DevKit profile install (GitHub source; not yet on PyPI): `uv tool install "git+https://github.com/Icaro0310/devin-devkit.git#subdirectory=packages/devkit"`, then `devin-devkit install qa --environment corporate-windows --apply` on a restricted Windows machine.
 - `qwenpaw-suite` is an optional related suite and is unsupported in Corporate Windows; on Linux its bridge launches via `bridge/start-all.sh` or an optional `systemd --user` unit.
 - `devin-janitor reap` kills only orphaned processes attributed to dead Devin sessions (PID+starttime attribution, grace window, sustained CPU, append-only would_kill ledger); dry-run by default, Linux only.
+- `devin-janitor` also auto-deletes a session whose first user message is a verbatim automation scoring template (judge calls inherit a descriptive title, so title alone can't reveal them), plus any title carrying the `Robot_` prefix the scoring bridge stamps at birth.
 - `devin-judge` gate accepts domain-specific checks via `--checks-file <checks.json>` or `--checks-preset merge`.
 - `devin-backup create --remote <dest>` re-verifies a fresh snapshot before offloading it to an ssh/rsync or mounted target; `restore --smoke` runs a post-restore integrity pass.
 - Individual CLI example: `uv tool install devin-doctor` from PyPI (Python ≥ 3.10, Windows + Linux); `pipx install devin-doctor` works as an alternative.
